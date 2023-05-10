@@ -1,0 +1,26 @@
+/* Slider dots style */
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.slick-active button {
+  background-color: white;
+}

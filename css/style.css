@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Varela Round";
+  src: url("/fonts/VarelaRound-Regular.ttf") format("truetype"), url("/fonts/VarelaRound-Regular.woff") format("woff"), url("/fonts/VarelaRound-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+/* Color */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .banner {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: #de5d5d;
+}
+.wrapper .banner .banner--slider {
+  width: 100%;
+  position: relative;
+  /* Slider Dots setting`s */
+  /* Banner Element setting`s */
+}
+.wrapper .banner .banner--slider .banner--slider-element-img {
+  max-width: 100%;
+  height: auto;
+}
+.wrapper .banner .banner--slider .slick-list {
+  overflow: hidden;
+}
+.wrapper .banner .banner--slider .slick-dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 5.8%;
+  left: 45.88%;
+}
+.wrapper .banner .banner--slider .slick-dots li {
+  list-style: none;
+  margin: 0 0.24em;
+}
+.wrapper .banner .banner--slider .slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.wrapper .banner .banner--slider .slick-active button {
+  background-color: white;
+}
+.wrapper .banner .banner--slider .banner--slider-element {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 28%;
+  left: 26.68%;
+}
+.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-title {
+  font: 600 90px "Montserrat", sans-serif;
+  letter-spacing: -0.015em;
+  color: white;
+  margin-bottom: 4.5rem;
+}
+.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+  color: #ffffff;
+  font-family: "Varela Round";
+  font-size: 30px;
+  font-weight: 400;
+  width: 257px;
+  height: 77px;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn:first-of-type {
+  padding: 12px 22px 13px 19px;
+}
+.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn:last-of-type {
+  padding: 23px 29px 24px 24px;
+}
+.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img {
+  max-width: 100%;
+}
+.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-app {
+  padding-right: 14px;
+}
+.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-play {
+  padding: 16px 18px 14px 3px;
+}
