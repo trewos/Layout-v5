@@ -1,92 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@font-face {
-  font-family: "Varela Round";
-  src: url("/fonts/VarelaRound-Regular.ttf") format("truetype"), url("/fonts/VarelaRound-Regular.woff") format("woff"), url("/fonts/VarelaRound-Regular.woff2") format("woff2");
-  font-weight: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 /* Color */
-.main-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper .banner {
+.banner {
   max-width: 100%;
+  padding: 0;
+  margin: 0 !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
   background-color: #de5d5d;
 }
-.wrapper .banner .banner--slider {
+.banner .banner--slider {
   width: 100%;
+  padding: 0;
   position: relative;
   /* Slider Dots setting`s */
   /* Banner Element setting`s */
 }
-.wrapper .banner .banner--slider .banner--slider-element-img {
+.banner .banner--slider .banner--slider-element-img {
   max-width: 100%;
   height: auto;
 }
-.wrapper .banner .banner--slider .slick-list {
+.banner .banner--slider .slick-list {
   overflow: hidden;
 }
-.wrapper .banner .banner--slider .slick-dots {
+.banner .banner--slider .slick-dots {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 5.8%;
-  left: 45.88%;
+  bottom: 5.5%;
+  right: 50%;
+  padding: 0;
+  margin-right: -24px;
 }
-.wrapper .banner .banner--slider .slick-dots li {
+.banner .banner--slider .slick-dots li {
   list-style: none;
-  margin: 0 0.24em;
+  margin: 0 0.245em;
 }
-.wrapper .banner .banner--slider .slick-dots button {
+.banner .banner--slider .slick-dots button {
   font-size: 0;
+  padding: 0;
   width: 12px;
   height: 12px;
   border: 2px solid white;
   background-color: transparent;
   border-radius: 50%;
 }
-.wrapper .banner .banner--slider .slick-active button {
+.banner .banner--slider .slick-active button {
   background-color: white;
 }
-.wrapper .banner .banner--slider .banner--slider-element {
+.banner .banner--slider .banner--slider-element {
   width: 100%;
+  padding: 0 15px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption {
+.banner .banner--slider .banner--slider-element .banner--slider-element-caption {
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 28%;
-  left: 26.68%;
+  padding-right: 18px;
 }
-.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-title {
+.banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-title {
   font: 600 90px "Montserrat", sans-serif;
   letter-spacing: -0.015em;
   color: white;
   margin-bottom: 4.5rem;
 }
-.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn {
+.banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn {
   display: flex;
   flex-direction: row;
 }
-.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn {
+.banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 15px;
   color: #ffffff;
-  font-family: "Varela Round";
+  font-family: "Varela Round", sans-serif;
   font-size: 30px;
   font-weight: 400;
   width: 257px;
@@ -94,18 +91,174 @@
   border-radius: 5px;
   border: 3px solid white;
 }
-.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn:first-of-type {
-  padding: 12px 22px 13px 19px;
+.banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn:hover {
+  background-color: rgba(222, 93, 93, 0.5);
 }
-.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn:last-of-type {
-  padding: 23px 29px 24px 24px;
+.banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-app {
+  margin-right: 14px;
 }
-.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img {
-  max-width: 100%;
+.banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-play {
+  margin: 16px 18px 14px 3px;
 }
-.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-app {
-  padding-right: 14px;
+
+/* Adaptive for banner */
+@media (max-width: 1200px) {
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-title {
+    font-size: 75px;
+    margin-bottom: 4rem;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn {
+    justify-content: center;
+    font-size: 26px;
+    width: 217px;
+    height: 67px;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-app {
+    width: 42px;
+    height: 42px;
+    margin-right: 9px;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-play {
+    width: 32px;
+    height: 37px;
+    margin: 11px 13px 9px 3px;
+  }
 }
-.wrapper .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-play {
-  padding: 16px 18px 14px 3px;
+@media (max-width: 992px) {
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption {
+    padding: 0;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-title {
+    font-size: 60px;
+    margin-bottom: 2.5rem;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn {
+    margin: 0 12px;
+    font-size: 22px;
+    width: 197px;
+    height: 57px;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-app {
+    width: 35px;
+    height: 35px;
+    margin-right: 6px;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-play {
+    width: 27px;
+    height: 32px;
+    margin: 9px 11px 7px 1px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .banner--slider .slick-dots {
+    margin-bottom: 0;
+    bottom: 5.5%;
+    margin-right: -24px;
+  }
+  .banner .banner--slider .slick-dots li {
+    list-style: none;
+    margin: 0 0.245em;
+  }
+  .banner .banner--slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+  }
+  .banner .banner--slider .slick-active button {
+    background-color: white;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-title {
+    font-size: 45px;
+    margin-bottom: 2rem;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn {
+    padding: 0;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-app {
+    width: 35px;
+    height: 35px;
+    margin: 0;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-play {
+    width: 30px;
+    height: 32px;
+    margin: 0;
+  }
+}
+@media (max-width: 667px) {
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-title {
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn {
+    margin: 0 9px;
+    width: 50px;
+    height: 50px;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-app {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-play {
+    width: 25px;
+    height: 27px;
+    margin: 0;
+  }
+}
+@media (max-width: 520px) {
+  .banner .banner--slider .slick-dots button {
+    width: 8px;
+    height: 8px;
+    border: 1.5px solid white;
+  }
+  .banner .banner--slider .slick-active button {
+    background-color: white;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-title {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn {
+    margin: 0 6px;
+    width: 40px;
+    height: 40px;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-app {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-play {
+    width: 20px;
+    height: 22px;
+    margin: 0;
+  }
+}
+@media (max-width: 440px) {
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-title {
+    font-size: 25px;
+    margin-bottom: 0.25rem;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn {
+    margin: 0 3px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-app {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  .banner .banner--slider .banner--slider-element .banner--slider-element-caption .banner--slider-element-caption-btn .btn .banner--slider-element-caption-btn-img-play {
+    width: 15px;
+    height: 17px;
+    margin: 0;
+  }
 }
