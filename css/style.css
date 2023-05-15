@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-/* Color */
+/* Color */ /* Banner */
 .banner {
   max-width: 100%;
   padding: 0;
@@ -260,5 +260,271 @@
     width: 15px;
     height: 17px;
     margin: 0;
+  }
+}
+.info {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.info--container {
+  padding: 98px 0;
+}
+.info--container .info-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.info--container .info--block {
+  margin-top: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info--container .info--block .info--block-element {
+  margin: 0;
+  color: #666666;
+}
+.info--container .info--block .info--block-element img {
+  margin-bottom: 38px;
+}
+.info--container .info--block .info--block-element h3 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+.info--container .info--block .info--block-element p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.info--container .info--block .info--block-element:first-child {
+  padding-left: 0;
+  margin-left: 35px;
+}
+.info--container .info--block .info--block-element:first-child img {
+  margin-left: 15px;
+}
+.info--container .info--block .info--block-element:last-child {
+  margin-right: 50px;
+}
+
+/* Adaptive for info-block */
+@media (min-width: 320px) {
+  .info--container {
+    padding: 38px 0;
+  }
+  .info--container .info-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 0;
+  }
+  .info--container .info--block {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info--container .info--block .info--block-element {
+    margin: 0;
+    color: #666666;
+  }
+  .info--container .info--block .info--block-element img {
+    width: 160px;
+    height: 160px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .info--container .info--block .info--block-element h3 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 45px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .info--container .info--block .info--block-element p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 10px;
+    line-height: 1;
+    width: 219px;
+    margin: 0 auto;
+  }
+  .info--container .info--block .info--block-element:first-child {
+    padding-left: 15px;
+    margin-left: 0;
+  }
+  .info--container .info--block .info--block-element:first-child img {
+    margin-left: 0;
+  }
+  .info--container .info--block .info--block-element:last-child {
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .info--container {
+    max-width: 720px;
+    padding: 52px 0;
+  }
+  .info--container .info-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 6px;
+  }
+  .info--container .info--block {
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info--container .info--block .info--block-element {
+    margin: 0;
+    color: #666666;
+  }
+  .info--container .info--block .info--block-element img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .info--container .info--block .info--block-element h3 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+  .info--container .info--block .info--block-element p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    width: auto;
+    padding: 0 30px;
+    margin: 0;
+  }
+  .info--container .info--block .info--block-element:first-child {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .info--container .info--block .info--block-element:first-child img {
+    margin-left: 0;
+  }
+  .info--container .info--block .info--block-element:last-child {
+    margin-top: 45px;
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .info--container {
+    max-width: 960px;
+    padding: 68px 0;
+  }
+  .info--container .info-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    margin-right: 6px;
+  }
+  .info--container .info--block {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info--container .info--block .info--block-element {
+    margin: 0;
+    color: #666666;
+  }
+  .info--container .info--block .info--block-element img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  .info--container .info--block .info--block-element h3 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+  .info--container .info--block .info--block-element p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    line-height: 1.25;
+    padding: 0;
+    margin: 0;
+  }
+  .info--container .info--block .info--block-element:first-child {
+    padding-left: 0;
+    margin-left: 20px;
+  }
+  .info--container .info--block .info--block-element:first-child img {
+    margin-left: 10px;
+  }
+  .info--container .info--block .info--block-element:last-child {
+    margin-top: 0;
+    margin-right: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .info--container {
+    max-width: 1170px;
+    padding: 108px 0 115px 0;
+  }
+  .info--container .info-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: -8px;
+    margin-right: 10px;
+  }
+  .info--container .info--block {
+    margin-top: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info--container .info--block .info--block-element {
+    margin: 0;
+    color: #666666;
+  }
+  .info--container .info--block .info--block-element img {
+    width: 229px;
+    height: 229px;
+    margin-bottom: 38px;
+  }
+  .info--container .info--block .info--block-element h3 {
+    font-family: "Varela Round", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+  .info--container .info--block .info--block-element p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    padding: 0;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .info--container .info--block .info--block-element:first-child {
+    padding-left: 0;
+    margin-left: 31px;
+  }
+  .info--container .info--block .info--block-element:first-child img {
+    margin-left: 15px;
+  }
+  .info--container .info--block .info--block-element:last-child {
+    margin-right: 47px;
   }
 }
