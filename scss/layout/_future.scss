@@ -1,0 +1,97 @@
+.future {
+  padding-top: 50px;
+  width: 100%;
+  background-color: #313131;
+
+  .future--container {
+    max-width: 1200px;
+    padding: 0 15px;
+    color: white;
+
+    .future--img {
+
+    }
+
+    .future--text {
+
+      .future--caption {
+
+
+        .future--caption-title {
+          font-family: "Montserrat", sans-serif;
+          font-size: 48px;
+          font-weight: 500;
+          margin-bottom: 18px;
+        }
+
+        .future--caption-text {
+          font-family: "Varela Round", sans-serif;
+          color: #aeaeae;
+          font-size: 18px;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: 27px;
+          text-align: left;
+          padding-right: 15px;
+          margin-bottom: 30px;
+        }
+
+        .future--caption-slider {
+          padding-top: 22px;
+
+          .future--caption-slider-element {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            .future--caption-slider-element-text {
+              font-family: "Varela Round", sans-serif;
+              color: #aeaeae;
+              font-size: 16px;
+              font-weight: 400;
+              margin-top: -5px;
+              padding: 0 30px;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: 24px;
+            }
+          }
+
+          .slick-list {
+            overflow: hidden;
+          }
+
+          /* Slider Dots setting`s */
+
+          .slick-dots {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 18px 0 0;
+          }
+
+          .slick-dots li {
+            list-style: none;
+            margin: 0 0.245em;
+          }
+
+          .slick-dots button {
+            font-size: 0;
+            padding: 0;
+            width: 12px;
+            height: 12px;
+            border: 2px solid white;
+            background-color: transparent;
+            border-radius: 50%;
+          }
+
+          .slick-active button {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+

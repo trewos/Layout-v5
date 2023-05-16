@@ -801,3 +801,76 @@
     background-color: white;
   }
 }
+.future {
+  padding-top: 50px;
+  width: 100%;
+  background-color: #313131;
+}
+.future .future--container {
+  max-width: 1200px;
+  padding: 0 15px;
+  color: white;
+}
+.future .future--container .future--text .future--caption .future--caption-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+.future .future--container .future--text .future--caption .future--caption-text {
+  font-family: "Varela Round", sans-serif;
+  color: #aeaeae;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+  text-align: left;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+.future .future--container .future--text .future--caption .future--caption-slider {
+  padding-top: 22px;
+  /* Slider Dots setting`s */
+}
+.future .future--container .future--text .future--caption .future--caption-slider .future--caption-slider-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.future .future--container .future--text .future--caption .future--caption-slider .future--caption-slider-element .future--caption-slider-element-text {
+  font-family: "Varela Round", sans-serif;
+  color: #aeaeae;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -5px;
+  padding: 0 30px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+.future .future--container .future--text .future--caption .future--caption-slider .slick-list {
+  overflow: hidden;
+}
+.future .future--container .future--text .future--caption .future--caption-slider .slick-dots {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 18px 0 0;
+}
+.future .future--container .future--text .future--caption .future--caption-slider .slick-dots li {
+  list-style: none;
+  margin: 0 0.245em;
+}
+.future .future--container .future--text .future--caption .future--caption-slider .slick-dots button {
+  font-size: 0;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.future .future--container .future--text .future--caption .future--caption-slider .slick-active button {
+  background-color: white;
+}
