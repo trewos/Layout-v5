@@ -10,18 +10,23 @@
 
     .future--img {
 
+      img {
+        padding-left: 15px;
+      }
     }
 
     .future--text {
+      padding: 0;
 
       .future--caption {
-
+        padding: 19% 15% 0 15px;
+        margin-left: 15%;
 
         .future--caption-title {
           font-family: "Montserrat", sans-serif;
           font-size: 48px;
           font-weight: 500;
-          margin-bottom: 18px;
+          margin-bottom: 24px;
         }
 
         .future--caption-text {
@@ -33,25 +38,49 @@
           letter-spacing: normal;
           line-height: 27px;
           text-align: left;
-          padding-right: 15px;
-          margin-bottom: 30px;
+          margin-left: 4px;
+          padding-right: 30px;
+          margin-bottom: 13.5%;
         }
 
         .future--caption-slider {
-          padding-top: 22px;
+          background-color: white;
+          border-radius: 5px;
+          width: 470px;
+          margin-left: 4px;
 
           .future--caption-slider-element {
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 34px 14px 30px;
+
+            img {
+              width: 89px;
+              height: 89px;
+              margin-top: -16px;
+              margin-right: 32px;
+            }
 
             .future--caption-slider-element-text {
+              padding-top: 16px;
+
+              h3 {
+                margin-left: -4px;
+                font-family: "Montserrat",sans-serif;
+                color: #cc5858;
+                font-size: 18px;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 24px;
+              }
+
               font-family: "Varela Round", sans-serif;
-              color: #aeaeae;
+              color: #666666;
               font-size: 16px;
               font-weight: 400;
-              margin-top: -5px;
-              padding: 0 30px;
               font-style: normal;
               letter-spacing: normal;
               line-height: 24px;
@@ -66,9 +95,11 @@
 
           .slick-dots {
             display: flex;
-            justify-content: flex-start;
             align-items: center;
-            padding: 18px 0 0;
+            padding: 2px 0 18px 30px;
+            background-color: #de5d5d;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
           }
 
           .slick-dots li {
@@ -88,6 +119,218 @@
 
           .slick-active button {
             background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Adaptive for Future */
+
+@media (max-width: 1200px) {
+
+  .future {
+    padding-top: 40px;
+
+    .future--container {
+      max-width: 992px;
+      padding: 0 15px;
+      color: white;
+
+      .future--img {
+
+        img {
+          padding-left: 15px;
+        }
+      }
+
+      .future--text {
+        padding: 0;
+
+        .future--caption {
+          padding: 19% 15% 0 15px;
+          margin-left: 15%;
+
+          .future--caption-title {
+            font-family: "Montserrat", sans-serif;
+            font-size: 48px;
+            font-weight: 500;
+            margin-bottom: 24px;
+          }
+
+          .future--caption-text {
+            font-family: "Varela Round", sans-serif;
+            color: #aeaeae;
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 27px;
+            text-align: left;
+            margin-left: 4px;
+            padding-right: 30px;
+            margin-bottom: 13.5%;
+          }
+
+          .future--caption-slider {
+            width: 370px;
+
+            .future--caption-slider-element {
+              padding: 14px 32px 12px 28px;
+
+              img {
+              }
+
+              .future--caption-slider-element-text {
+                padding-top: 14px;
+
+                h3 {
+                  margin-left: -4px;
+                  font-size: 16px;
+                  line-height: 20px;
+                }
+
+                font-size: 14px;
+                line-height: 20px;
+              }
+            }
+            /* Slider Dots setting`s */
+
+            .slick-dots {
+              display: flex;
+              align-items: center;
+              padding: 2px 0 16px 28px;
+              background-color: #de5d5d;
+              border-bottom-left-radius: 5px;
+              border-bottom-right-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+  .future {
+    padding-top: 35px;
+
+    .future--container {
+      max-width: 767px;
+
+      .future--img {
+
+      }
+
+      .future--text {
+        padding: 0;
+
+        .future--caption {
+          padding: 19% 15% 0 15px;
+          margin-left: 15%;
+
+          .future--caption-title {
+            font-family: "Montserrat", sans-serif;
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 14px;
+          }
+
+          .future--caption-text {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: left;
+            margin-left: 2px;
+            padding-right: 30px;
+            margin-bottom: 6.5%;
+          }
+
+          .future--caption-slider {
+            width: 290px;
+
+            .future--caption-slider-element {
+              padding: 8px 26px 6px 22px;
+
+              img {
+                width: 69px;
+                height: 69px;
+                margin-top: -14px;
+                margin-right: 22px;
+              }
+
+              .future--caption-slider-element-text {
+                padding-top: 14px;
+
+                h3 {
+                  margin-left: -2px;
+                  font-size: 16px;
+                  line-height: 18px;
+                }
+
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 0;
+              }
+            }
+            /* Slider Dots setting`s */
+
+            .slick-dots {
+              display: flex;
+              align-items: center;
+              padding: 2px 0 16px 26px;
+              background-color: #de5d5d;
+              border-bottom-left-radius: 5px;
+              border-bottom-right-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .future {
+    padding-top: 35px;
+
+    .future--container {
+      max-width: 320px;
+
+      .future--img {
+        padding: 0;
+
+        img {
+          padding: 0;
+        }
+      }
+
+      .future--text {
+        padding: 0;
+
+        .future--caption {
+          padding: 0;
+          margin: 0 auto;
+
+          .future--caption-title {
+            font-size: 38px;
+            margin: 0 auto;
+            padding: 0 15px;
+          }
+
+          .future--caption-text {
+            margin: 0 auto 8.5% auto;
+            padding: 0 15px;
+          }
+
+          .future--caption-slider {
+            margin: 0 auto;
+
+            .slick-list {
+              overflow: hidden;
+            }
+
           }
         }
       }

@@ -23,3 +23,12 @@ $('.share--caption-slider').slick({
     autoplay: true,
     autoplaySpeed: 5000,
 });
+
+$('.future--caption-slider').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+});
