@@ -1,5 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.wrapper {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Color */ /* Banner */
 .banner {
   max-width: 100%;
@@ -1069,4 +1161,62 @@
   .future .future--container .future--text .future--caption .future--caption-slider .slick-list {
     overflow: hidden;
   }
+}
+.taken {
+  width: 100%;
+  background-color: white;
+}
+.taken--container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.taken .image-block {
+  width: 25%;
+  position: relative;
+  padding: 0;
+}
+.taken .image-block::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.taken .image-block img {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+.taken .overlay {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #151515;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.taken .image-block:hover .overlay {
+  opacity: 1;
+}
+.taken .counter {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.taken .like-button {
+  padding: 8px 16px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+}
+.taken .like-button.liked {
+  background-color: #ff0000;
+  color: #fff;
 }
