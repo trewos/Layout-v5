@@ -33,40 +33,27 @@ $('.future--caption-slider').slick({
     autoplaySpeed: 5000,
 });
 
-const imageContainers = document.querySelectorAll('.image-block');
+function changeImage(button) {
+    button.classList.toggle('clicked');
+}
 
-imageContainers.forEach(imageContainer => {
-    const image = imageContainer.querySelector('img');
-    const overlay = imageContainer.querySelector('.overlay');
+var imageBlocks = document.querySelectorAll('.TWA__gallery__block');
 
-    imageContainer.addEventListener('mouseenter', () => {
-        const overlayHeight = overlay.offsetHeight;
-        image.style.transform = `translateY(-${overlayHeight}px)`;
-    });
+imageBlocks.forEach(function(block) {
+    var counter = block.querySelector('.TWA__gallery__block-response-likes-counter');
+    var likeButton = block.querySelector('.TWA__gallery__block-response-likes-button');
+    var liked = false;
 
-    imageContainer.addEventListener('mouseleave', () => {
-        image.style.transform = 'translateY(0)';
+    likeButton.addEventListener('click', function() {
+        if (!liked) {
+            var currentCount = parseInt(counter.textContent);
+            var newCount = currentCount + 1;
+            counter.textContent = newCount;
+        } else {
+            var currentCount = parseInt(counter.textContent);
+            var newCount = currentCount - 1;
+            counter.textContent = newCount;
+        }
+        liked = !liked;
     });
 });
-
-const counters = document.querySelectorAll('.counter');
-const likeButtons = document.querySelectorAll('.like-button');
-
-for (let i = 0; i < likeButtons.length; i++) {
-    let count = 0;
-    let liked = false;
-
-    likeButtons[i].addEventListener('click', () => {
-        if (!liked) {
-            count++;
-            liked = true;
-            counters[i].textContent = count;
-            likeButtons[i].classList.add('liked');
-        } else {
-            count--;
-            liked = false;
-            counters[i].textContent = count;
-            likeButtons[i].classList.remove('liked');
-        }
-    });
-}
