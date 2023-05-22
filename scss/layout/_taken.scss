@@ -6,10 +6,12 @@
   &__container {
 
     .TWA__block {
-      margin-bottom: 3.3%;
+      margin-top: -1px;
+      margin-bottom: 3.2%;
 
       &-information {
-        margin-left: 22.5%;
+        margin-left: 25.35%;
+        text-align: left;
 
         &-title {
           color: #f06464;
@@ -20,6 +22,7 @@
 
         &-text {
           color: #666666;
+          width: 435px;
           font: 400 18px "Varela Round", sans-serif;
           line-height: 27px;
         }
@@ -37,8 +40,6 @@
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 100%;
         flex-grow: 1;
         flex-direction: column;
 
@@ -64,6 +65,7 @@
           position: absolute;
           bottom: 0;
           right: 0;
+          padding: 30px 15px;
 
           &-text {
             margin-bottom: 0;
@@ -112,10 +114,268 @@
         }
 
         &:hover .TWA__gallery__block-response {
-          padding: 30px;
           display: flex;
           flex-direction: row;
           justify-content: space-around;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .TWA {
+    .TWA__gallery {
+      &__container {
+        .TWA__gallery__block {
+          .TWA__gallery__block-response {
+            padding: 30px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .TWA {
+    .TWA__gallery {
+      &__container {
+        .TWA__gallery__block {
+          .TWA__gallery__block-response {
+            padding: 20px 8px;
+
+            p {
+              font-size: 14px;
+            }
+
+            &-likes {
+              img {
+                width: 22px;
+                height: 18px;
+              }
+
+              &-counter {
+                font-size: 22px;
+                padding-left: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    padding-top: 64px;
+
+    &__container {
+      .TWA__block {
+        margin-bottom: 4%;
+
+        &-information {
+          margin-left: 22%;
+
+          &-text {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .TWA {
+    padding-top: 58px;
+
+    &__container {
+      .TWA__block {
+        margin-bottom: 4.4%;
+
+        &-information {
+          margin-left: 20%;
+
+          &-text {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .TWA {
+    .TWA__gallery {
+      &__container {
+        flex-wrap: wrap;
+      }
+
+      .TWA__gallery__block {
+        flex-basis: 50%;
+
+        .TWA__gallery__block-response {
+          padding: 30px 25px;
+
+          p {
+            font-size: 18px;
+          }
+
+          &-likes {
+            img {
+              width: 25px;
+              height: 21px;
+            }
+
+            &-counter {
+              font-size: 24px;
+              padding-left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .TWA {
+    &__container {
+      .TWA__block {
+        margin-bottom: 5%;
+
+        &-information {
+          margin-left: 12%;
+
+          &-title {
+            font-size: 38px;
+            margin-bottom: 15px;
+          }
+
+          &-text {
+            font-size: 16px;
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 667px) {
+  .TWA {
+    .TWA__gallery {
+      &__container {
+        .TWA__gallery__block {
+          .TWA__gallery__block-response {
+            padding: 20px 8px;
+
+            p {
+              font-size: 16px;
+            }
+
+            &-likes {
+              img {
+                width: 22px;
+                height: 18px;
+              }
+
+              &-counter {
+                font-size: 22px;
+                padding-left: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .TWA {
+    .TWA__gallery {
+      &__container {
+        .TWA__gallery__block {
+          .TWA__gallery__block-response {
+            padding: 18px 8px;
+
+            p {
+              font-size: 14px;
+            }
+
+            &-likes {
+              img {
+                width: 20px;
+                height: 16px;
+              }
+
+              &-counter {
+                font-size: 20px;
+                padding-left: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .TWA {
+    padding-top: 50px;
+
+    &__container {
+      max-width: 320px;
+
+      .TWA__block {
+        margin: 0 0 10% 0;
+
+        &-information {
+          margin: 0;
+
+          &-title {
+            font-size: 34px;
+            margin-bottom: 14px;
+          }
+
+          &-text {
+            font-size: 14px;
+            line-height: 24px;
+            width: 290px;
+          }
+        }
+      }
+    }
+  }
+  .TWA {
+    .TWA__gallery {
+      &__container {
+        .TWA__gallery__block {
+          flex-basis: 100%;
+
+          &-photo {
+            max-width: 100%;
+            max-height: 100%;
+          }
+
+          .TWA__gallery__block-response {
+            padding: 20px 8px;
+
+            p {
+              font-size: 16px;
+            }
+
+            &-likes {
+              img {
+                width: 22px;
+                height: 18px;
+              }
+
+              &-counter {
+                font-size: 22px;
+                padding-left: 4px;
+              }
+            }
+          }
         }
       }
     }

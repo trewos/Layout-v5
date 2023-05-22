@@ -443,7 +443,7 @@ h6 {
   }
   .info--container .info--block .info--block-element p {
     font-family: "Varela Round", sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1;
     width: 219px;
     margin: 0 auto;
@@ -488,7 +488,7 @@ h6 {
   }
   .info--container .info--block .info--block-element h3 {
     font-family: "Varela Round", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     padding: 0;
     letter-spacing: 1px;
@@ -496,7 +496,7 @@ h6 {
   }
   .info--container .info--block .info--block-element p {
     font-family: "Varela Round", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1;
     width: auto;
     padding: 0 30px;
@@ -542,7 +542,7 @@ h6 {
   }
   .info--container .info--block .info--block-element h3 {
     font-family: "Varela Round", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     padding: 0;
     letter-spacing: 1px;
@@ -550,7 +550,7 @@ h6 {
   }
   .info--container .info--block .info--block-element p {
     font-family: "Varela Round", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.25;
     padding: 0;
     margin: 0;
@@ -685,7 +685,7 @@ h6 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 18px 0 0;
+  padding: 20px 0 0;
 }
 .share .share--container .share--text .share--caption .share--caption-slider .slick-dots li {
   list-style: none;
@@ -1086,11 +1086,11 @@ h6 {
     margin-bottom: 14px;
   }
   .future .future--container .future--text .future--caption .future--caption-text {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 22px;
     text-align: left;
     margin-left: 2px;
-    padding-right: 30px;
+    padding-right: 18px;
     margin-bottom: 6.5%;
   }
   .future .future--container .future--text .future--caption .future--caption-slider {
@@ -1150,8 +1150,11 @@ h6 {
     font-size: 38px;
     margin: 0 auto;
     padding: 0 15px;
+    margin-bottom: 18px;
   }
   .future .future--container .future--text .future--caption .future--caption-text {
+    font-size: 14px;
+    line-height: 24px;
     margin: 0 auto 8.5% auto;
     padding: 0 15px;
   }
@@ -1168,10 +1171,12 @@ h6 {
   background-color: white;
 }
 .TWA__container .TWA__block {
-  margin-bottom: 3.3%;
+  margin-top: -1px;
+  margin-bottom: 3.2%;
 }
 .TWA__container .TWA__block-information {
-  margin-left: 22.5%;
+  margin-left: 25.35%;
+  text-align: left;
 }
 .TWA__container .TWA__block-information-title {
   color: #f06464;
@@ -1181,6 +1186,7 @@ h6 {
 }
 .TWA__container .TWA__block-information-text {
   color: #666666;
+  width: 435px;
   font: 400 18px "Varela Round", sans-serif;
   line-height: 27px;
 }
@@ -1194,8 +1200,6 @@ h6 {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
   flex-grow: 1;
   flex-direction: column;
 }
@@ -1219,6 +1223,7 @@ h6 {
   position: absolute;
   bottom: 0;
   right: 0;
+  padding: 30px 15px;
 }
 .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response-text {
   margin-bottom: 0;
@@ -1256,8 +1261,269 @@ h6 {
   display: block;
 }
 .TWA .TWA__gallery__container .TWA__gallery__block:hover .TWA__gallery__block-response {
-  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+@media (max-width: 1400px) {
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .TWA {
+    padding-top: 64px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response {
+    padding: 20px 8px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response p {
+    font-size: 14px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response-likes img {
+    width: 22px;
+    height: 18px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response-likes-counter {
+    font-size: 22px;
+    padding-left: 4px;
+  }
+  .TWA__container .TWA__block {
+    margin-bottom: 4%;
+  }
+  .TWA__container .TWA__block-information {
+    margin-left: 22%;
+  }
+  .TWA__container .TWA__block-information-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .TWA {
+    padding-top: 58px;
+  }
+  .TWA__container .TWA__block {
+    margin-bottom: 4.4%;
+  }
+  .TWA__container .TWA__block-information {
+    margin-left: 20%;
+  }
+  .TWA__container .TWA__block-information-text {
+    font-size: 18px;
+  }
+  .TWA .TWA__gallery__container {
+    flex-wrap: wrap;
+  }
+  .TWA .TWA__gallery .TWA__gallery__block {
+    flex-basis: 50%;
+  }
+  .TWA .TWA__gallery .TWA__gallery__block .TWA__gallery__block-response {
+    padding: 30px 25px;
+  }
+  .TWA .TWA__gallery .TWA__gallery__block .TWA__gallery__block-response p {
+    font-size: 18px;
+  }
+  .TWA .TWA__gallery .TWA__gallery__block .TWA__gallery__block-response-likes img {
+    width: 25px;
+    height: 21px;
+  }
+  .TWA .TWA__gallery .TWA__gallery__block .TWA__gallery__block-response-likes-counter {
+    font-size: 24px;
+    padding-left: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .TWA__container .TWA__block {
+    margin-bottom: 5%;
+  }
+  .TWA__container .TWA__block-information {
+    margin-left: 12%;
+  }
+  .TWA__container .TWA__block-information-title {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  .TWA__container .TWA__block-information-text {
+    font-size: 16px;
+    width: 400px;
+  }
+}
+@media (max-width: 667px) {
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response {
+    padding: 20px 8px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response p {
+    font-size: 16px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response-likes img {
+    width: 22px;
+    height: 18px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response-likes-counter {
+    font-size: 22px;
+    padding-left: 4px;
+  }
+}
+@media (max-width: 520px) {
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response {
+    padding: 18px 8px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response p {
+    font-size: 14px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response-likes img {
+    width: 20px;
+    height: 16px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response-likes-counter {
+    font-size: 20px;
+    padding-left: 4px;
+  }
+}
+@media (max-width: 480px) {
+  .TWA {
+    padding-top: 50px;
+  }
+  .TWA__container {
+    max-width: 320px;
+  }
+  .TWA__container .TWA__block {
+    margin: 0 0 10% 0;
+  }
+  .TWA__container .TWA__block-information {
+    margin: 0;
+  }
+  .TWA__container .TWA__block-information-title {
+    font-size: 34px;
+    margin-bottom: 14px;
+  }
+  .TWA__container .TWA__block-information-text {
+    font-size: 14px;
+    line-height: 24px;
+    width: 290px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block {
+    flex-basis: 100%;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block-photo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response {
+    padding: 20px 8px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response p {
+    font-size: 16px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response-likes img {
+    width: 22px;
+    height: 18px;
+  }
+  .TWA .TWA__gallery__container .TWA__gallery__block .TWA__gallery__block-response-likes-counter {
+    font-size: 22px;
+    padding-left: 4px;
+  }
+}
+.CTA {
+  padding: 100px 0 109px 0;
+  width: 100%;
+  background-color: #de5d5d;
+}
+.CTA__container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.CTA .CTA__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.CTA .CTA__block .CTA__block-content {
+  display: flex;
+}
+.CTA .CTA__block-logo {
+  margin: 124px 17px 0 0;
+}
+.CTA .CTA__block-information {
+  margin: -38px 32px 0 0;
+}
+.CTA .CTA__block-information-title {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  width: 415px;
+}
+.CTA .CTA__block-information-text {
+  color: #ffffff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  padding-top: 6px;
+}
+.CTA .CTA__block-information-btn {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4.8%;
+}
+.CTA .CTA__block-information-btn .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  width: 257px;
+  height: 77px;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+.CTA .CTA__block-information-btn .btn:first-of-type {
+  margin-right: 15px;
+}
+.CTA .CTA__block-information-btn .btn:last-of-type {
+  margin-left: 15px;
+}
+.CTA .CTA__block-information-btn .btn:hover {
+  background-color: rgba(190, 33, 63, 0.5);
+}
+.CTA .CTA__block-information-btn .btn .CTA__block-information-btn-img-app {
+  margin-right: 14px;
+}
+.CTA .CTA__block-information-btn .btn .CTA__block-information-btn-img-play {
+  margin: 16px 18px 14px 3px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .CTA .CTA__container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 992px) {
+  .CTA .CTA__container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .CTA .CTA__container {
+    max-width: 667px;
+  }
+}
+@media (max-width: 667px) {
+  .CTA .CTA__container {
+    max-width: 320px;
+  }
 }

@@ -1,0 +1,128 @@
+.CTA {
+  padding: 100px 0 109px 0;
+  width: 100%;
+  background-color: #de5d5d;
+
+  &__container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+
+  .CTA__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    .CTA__block-content {
+      display: flex;
+    }
+
+    &-logo {
+      margin: 124px 17px 0 0;
+    }
+
+    &-information {
+      margin: -38px 32px 0 0;
+
+      &-title {
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 48px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        width: 415px;
+      }
+
+      &-text {
+        color: #ffffff;
+        font-family: "Varela Round", sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        padding-top: 6px;
+      }
+
+      &-btn {
+        display: flex;
+        flex-direction: row;
+        padding-top: 4.8%;
+
+        .btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          color: #ffffff;
+          font-family: "Varela Round", sans-serif;
+          font-size: 30px;
+          font-weight: 400;
+          width: 257px;
+          height: 77px;
+          border-radius: 5px;
+          border: 3px solid white;
+
+          &:first-of-type {
+            margin-right: 15px;
+          }
+
+          &:last-of-type {
+            margin-left: 15px;
+          }
+
+          &:hover {
+            background-color: rgba(190, 33, 63, 0.5);
+          }
+
+          .CTA__block-information-btn-img-app {
+            margin-right: 14px;
+          }
+
+          .CTA__block-information-btn-img-play {
+            margin: 16px 18px 14px 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .CTA {
+    .CTA__container {
+      max-width: 992px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .CTA {
+    .CTA__container {
+      max-width: 768px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .CTA {
+    .CTA__container {
+      max-width: 667px;
+    }
+  }
+}
+
+@media (max-width: 667px) {
+  .CTA {
+    .CTA__container {
+      max-width: 320px;
+    }
+  }
+}
