@@ -1,5 +1,5 @@
 .CTA {
-  padding: 100px 0 109px 0;
+  padding: 102px 0 109px 0;
   width: 100%;
   background-color: #de5d5d;
 
@@ -14,27 +14,19 @@
     justify-content: space-around;
     flex-direction: row;
 
-    .CTA__block-content {
-      display: flex;
-    }
 
     &-logo {
-      margin: 124px 17px 0 0;
+      margin: 10.5% -14% 0 0;
     }
 
     &-information {
-      margin: -38px 32px 0 0;
+      margin: -3.5% 45px 0 0;
 
       &-title {
         color: #ffffff;
         font-family: "Montserrat", sans-serif;
         font-size: 48px;
         font-weight: 500;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
-        text-align: left;
-        width: 415px;
       }
 
       &-text {
@@ -42,17 +34,13 @@
         font-family: "Varela Round", sans-serif;
         font-size: 24px;
         font-weight: 300;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
-        text-align: left;
         padding-top: 6px;
       }
 
       &-btn {
         display: flex;
         flex-direction: row;
-        padding-top: 4.8%;
+        padding-top: 3.8%;
 
         .btn {
           display: flex;
@@ -97,32 +85,204 @@
 
 @media (max-width: 1200px) {
   .CTA {
+    padding: 75px 0 94px 0;
+
     .CTA__container {
       max-width: 992px;
+
+      .CTA__block {
+
+        .CTA__block-logo {
+          margin: 10.5% 0 0 0;
+
+          img {
+            width: 310px;
+            height: 310px;
+          }
+        }
+
+        .CTA__block-information {
+          margin: -3.5% 0 0 0;
+
+          .CTA__block-information-title {
+
+          }
+
+          .CTA__block-information-text {
+
+          }
+
+          .CTA__block-information-btn {
+
+            .btn {
+              justify-content: center;
+
+            }
+
+            .CTA__block-information-btn-img-app {
+            }
+
+            .CTA__block-information-btn-img-play {
+
+            }
+          }
+        }
+      }
     }
   }
 }
 
 @media (max-width: 992px) {
   .CTA {
+    padding: 70px 0 89px 0;
+
     .CTA__container {
       max-width: 768px;
+
+      .CTA__block {
+
+        .CTA__block-logo {
+
+          img {
+            width: 290px;
+            height: 290px;
+          }
+        }
+
+        .CTA__block-information {
+
+          .CTA__block-information-title {
+            font-size: 40px
+          }
+
+          .CTA__block-information-text {
+            font-size: 20px;
+          }
+
+          .CTA__block-information-btn {
+
+            .btn {
+              font-size: 22px;
+              width: 197px;
+              height: 57px;
+
+              &:first-of-type {
+                margin-right: 12px;
+              }
+
+              &:last-of-type {
+                margin-left: 12px;
+              }
+            }
+
+            .CTA__block-information-btn-img-app {
+              width: 35px;
+              height: 35px;
+              margin-right: 6px;
+            }
+
+            .CTA__block-information-btn-img-play {
+              width: 27px;
+              height: 32px;
+              margin: 9px 11px 7px 1px;
+            }
+          }
+        }
+      }
     }
   }
 }
 
 @media (max-width: 768px) {
   .CTA {
+    padding: 68px 0 87px 0;
+
     .CTA__container {
       max-width: 667px;
+
+      .CTA__block {
+
+        .CTA__block-logo {
+
+          img {
+            width: 260px;
+            height: 260px;
+          }
+        }
+
+        .CTA__block-information {
+
+          .CTA__block-information-title {
+
+          }
+
+          .CTA__block-information-text {
+
+          }
+
+          .CTA__block-information-btn {
+
+            .btn {
+              padding: 0;
+              font-size: 0;
+              width: 60px;
+              height: 60px;
+              border: 2px solid white;
+            }
+
+            .CTA__block-information-btn-img-app {
+              width: 35px;
+              height: 35px;
+              margin: 0;
+            }
+
+            .CTA__block-information-btn-img-play {
+              width: 30px;
+              height: 32px;
+              margin: 0;
+            }
+          }
+        }
+      }
     }
   }
 }
 
 @media (max-width: 667px) {
   .CTA {
+    padding: 65px 0 84px 0;
+
     .CTA__container {
       max-width: 320px;
+
+      .CTA__block {
+        justify-content: center;
+        flex-direction: column;
+
+        .CTA__block-logo {
+          margin: 0;
+
+          img {
+            width: 245px;
+            height: 245px;
+          }
+        }
+
+        .CTA__block-information {
+
+          .CTA__block-information-title {
+            font-size: 34px;
+          }
+
+          .CTA__block-information-text {
+            font-size: 18px
+          }
+
+          .CTA__block-information-btn {
+            justify-content: center;
+          }
+        }
+      }
     }
   }
 }

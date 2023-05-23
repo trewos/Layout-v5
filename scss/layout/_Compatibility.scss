@@ -1,0 +1,173 @@
+.compatibility {
+  padding: 85px 0 120px 0;
+  width: 100%;
+  background-color: #e7e7e7;
+
+  &__container {
+    max-width: 1200px;
+
+    .compatibility__block {
+      display: flex;
+      flex-direction: column;
+      padding: 0 8.545%;
+
+      .compatibility__block-title {
+        color: #666666;
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        border-bottom: 2px solid #cbcbcb;
+        padding-bottom: 22px;
+        margin-left: -10px;
+      }
+
+      .compatibility__block-information {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: #666666;
+        padding-top: 24px;
+        margin-left: -8px;
+
+        h1 {
+          font-family: "Montserrat",sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 2px;
+        }
+
+        p {
+          font-family: "Varela Round", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          margin-bottom: 27px;
+        }
+
+        .compatibility__block-information-ios {
+
+        }
+
+        .compatibility__block-information-android {
+          margin-right: 40px;
+
+          p {
+            margin-bottom: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .compatibility {
+
+    .compatibility__container {
+      max-width: 992px;
+
+      .compatibility__block {
+
+        .compatibility__block-information {
+
+          p {
+            font-size: 14px;
+          }
+
+          .compatibility__block-information-android {
+
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .compatibility {
+
+    .compatibility__container {
+      max-width: 768px;
+
+      .compatibility__block {
+
+        .compatibility__block-information {
+          flex-direction: column;
+
+          p {
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+
+          .compatibility__block-information-android {
+            padding-top: 36px;
+            margin-right: 0;
+
+            p {
+              margin-bottom: 29px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .compatibility {
+
+    .compatibility__container {
+      max-width: 520px;
+
+      .compatibility__block {
+
+        .compatibility__block-information {
+
+          p {
+
+          }
+
+          .compatibility__block-information-android {
+
+            p {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .compatibility {
+
+    .compatibility__container {
+      max-width: 320px;
+
+      .compatibility__block {
+
+        .compatibility__block-information {
+
+          br {
+            display: none;
+          }
+
+          p {
+            font-size: 13px;
+          }
+
+          .compatibility__block-information-android {
+
+            p {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

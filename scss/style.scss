@@ -1,9 +1,12 @@
 @import "base/nullstyle";
 @import "base/font";
 @import "sass-utils/variables";
+@import "layout/header";
 @import "layout/banner";
 @import "layout/info";
 @import "layout/share";
 @import "layout/future";
 @import "layout/taken";
 @import "layout/CTA";
+@import "layout/Compatibility";
+@import "layout/footer";

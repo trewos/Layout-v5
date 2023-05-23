@@ -57,3 +57,27 @@ imageBlocks.forEach(function(block) {
         liked = !liked;
     });
 });
+
+const FooterEmail = document.getElementById('footer__form-email')
+
+function validateFooterEmail() {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regex.test(FooterEmail.value.trim())) {
+        FooterEmail.style.border = '1px solid red';
+        FooterEmail.style.boxShadow = 'inset 0 0 5px red';
+        return false;
+    } else {
+        FooterEmail.style.border = '';
+        FooterEmail.style.boxShadow = '';
+        return true;
+    }
+}
+function validateForm() {
+    const validEmail = validateFooterEmail();
+    return validEmail;
+}
+
+document.querySelector('#footer__form-button').addEventListener('click', function (event) {
+    if (!validateForm()) {
+    }
+});

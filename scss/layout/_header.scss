@@ -1,0 +1,220 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  color: white;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #de5d5d;
+    z-index: 15;
+  }
+
+  &__container {
+    max-width: min(1250px, 100%);
+    margin: 0 auto;
+
+    .header__block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+
+      .header__logo {
+        margin: 10px auto 10px 0;
+        z-index: 20;
+      }
+
+      .header__menu {
+        z-index: 20;
+
+        .header__menu-list {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 40px 0 41px auto;
+
+          .header__menu-list-item {
+            text-align: center;
+            font: 14px "Open Sans", sans-serif;;
+            letter-spacing: 0.0235em;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Adaptive for header */
+
+@media (max-width: 1440px) {
+  .header {
+    &__container {
+      max-width: min(1250px, 100%);
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .header {
+    &__container {
+      max-width: min(992px, 100%);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__container {
+      max-width: min(798px, 100%);
+
+      .header__block {
+        .header__logo {
+          margin: 7px auto 7px 0;
+
+          img {
+            width: 70px;
+            height: 70px;
+          }
+        }
+
+        .header__menu {
+          .header__menu-list {
+            margin: 32px 0 33px auto;
+
+            .header__menu-list-item {
+              .header__menu-list-link {
+                padding: 10px 15px;;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 798px) {
+  .header {
+    &__container {
+      max-width: min(697px, 100%);
+
+      .header__block {
+        .header__logo {
+          margin: 5px auto 5px 0;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        /* Burger-menu  setting`s */
+
+        .header__burger {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 44px;
+          height: 30px;
+          border-radius: 4px;
+          background-color: #de5d5d;
+          z-index: 20;
+          margin: 20px 0 20px auto;
+
+          .header__burger-toggle {
+            display: block;
+            position: relative;
+            height: 2px;
+            width: 26px;
+            background-color: #ffffff;
+
+            &::after, &::before {
+              content: "";
+              position: absolute;
+              height: 2px;
+              width: 26px;
+              background-color: #ffffff;
+            }
+
+            &::after {
+              bottom: 6px;
+            }
+
+            &::before {
+              top: 6px;
+            }
+          }
+
+          &:hover {
+            background-color: #ffffff;
+          }
+        }
+
+        .header__menu {
+          position: fixed;
+          top: -120%;
+          left: 0;
+          width: 100%;
+          background-color: #de5d5d;
+          padding-top: 70px;
+          overflow: auto;
+          transition: all 0.3s ease 0.5s;;
+          z-index: 5;
+
+          &.active {
+            top: 0;
+          }
+
+          .header__menu-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+            .header__menu-list-item {
+              margin-bottom: 1.5em;
+
+              &:first-child {
+                margin-top: 0.5em;
+              }
+
+              &:nth-child(6) {
+                margin-bottom: 25px;
+              }
+
+              .header__menu-list-link {
+                padding: 10px 20px;;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 697px) {
+  .header {
+    &__container {
+      max-width: min(497px, 100%);
+    }
+  }
+}
+
+@media (max-width: 497px) {
+  .header {
+    &__container {
+      max-width: 320px;
+    }
+  }
+}
