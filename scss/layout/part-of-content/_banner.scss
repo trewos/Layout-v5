@@ -2,19 +2,18 @@
 
 .banner {
   max-width: 100%;
-  padding: 0;
-  margin: 0!important;
+  margin: 0 !important;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $banner-first-background-color;
 
-  .banner--slider {
+  .banner__slider {
     width: 100%;
     padding: 0;
     position: relative;
 
-    .banner--slider-element-img {
+    .banner__slider-element-img {
       max-width: 100%;
       height: auto;
     }
@@ -57,7 +56,7 @@
 
     /* Banner Element setting`s */
 
-    .banner--slider-element {
+    .banner__slider-element {
       width: 100%;
       padding: 0 15px;
       position: relative;
@@ -65,7 +64,7 @@
       justify-content: center;
       align-items: center;
 
-      .banner--slider-element-caption {
+      .banner__slider-element-caption {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -74,14 +73,14 @@
         top: 28%;
         padding-right: 18px;
 
-        .banner--slider-element-caption-title {
+        .banner__slider-element-caption-title {
           font: 600 90px "Montserrat", sans-serif;
           letter-spacing: -0.015em;
           color: white;
           margin-bottom: 4.5rem;
         }
 
-        .banner--slider-element-caption-btn {
+        .banner__slider-element-caption-btn {
           display: flex;
           flex-direction: row;
 
@@ -91,7 +90,7 @@
             align-items: center;
             margin: 0 15px;
             color: #ffffff;
-            font-family: "Varela Round",sans-serif;
+            font-family: "Varela Round", sans-serif;
             font-size: 30px;
             font-weight: 400;
             width: 257px;
@@ -103,11 +102,11 @@
               background-color: rgba(222, 93, 93, 0.5);
             }
 
-            .banner--slider-element-caption-btn-img-app {
+            .banner__slider-element-caption-btn-img-app {
               margin-right: 14px;
             }
 
-            .banner--slider-element-caption-btn-img-play {
+            .banner__slider-element-caption-btn-img-play {
               margin: 16px 18px 14px 3px;
             }
           }
@@ -119,22 +118,23 @@
 
 /* Adaptive for banner */
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .banner {
 
-    .banner--slider {
+    .banner__slider {
 
 
-      .banner--slider-element {
+      .banner__slider-element {
 
-        .banner--slider-element-caption {
+        .banner__slider-element-caption {
 
-          .banner--slider-element-caption-title {
+          .banner__slider-element-caption-title {
             font-size: 75px;
             margin-bottom: 4rem;
 
           }
-          .banner--slider-element-caption-btn {
+
+          .banner__slider-element-caption-btn {
 
             .btn {
               justify-content: center;
@@ -143,13 +143,13 @@
               height: 67px;
 
 
-              .banner--slider-element-caption-btn-img-app {
+              .banner__slider-element-caption-btn-img-app {
                 width: 42px;
                 height: 42px;
                 margin-right: 9px;
               }
 
-              .banner--slider-element-caption-btn-img-play {
+              .banner__slider-element-caption-btn-img-play {
                 width: 32px;
                 height: 37px;
                 margin: 11px 13px 9px 3px;
@@ -165,19 +165,20 @@
 @media (max-width: 992px) {
   .banner {
 
-    .banner--slider {
+    .banner__slider {
 
-      .banner--slider-element {
+      .banner__slider-element {
 
-        .banner--slider-element-caption {
+        .banner__slider-element-caption {
           padding: 0;
 
-          .banner--slider-element-caption-title {
+          .banner__slider-element-caption-title {
 
             font-size: 60px;
             margin-bottom: 2.5rem;
           }
-          .banner--slider-element-caption-btn {
+
+          .banner__slider-element-caption-btn {
 
             .btn {
 
@@ -187,13 +188,13 @@
               height: 57px;
 
 
-              .banner--slider-element-caption-btn-img-app {
+              .banner__slider-element-caption-btn-img-app {
                 width: 35px;
                 height: 35px;
                 margin-right: 6px;
               }
 
-              .banner--slider-element-caption-btn-img-play {
+              .banner__slider-element-caption-btn-img-play {
                 width: 27px;
                 height: 32px;
                 margin: 9px 11px 7px 1px;
@@ -209,7 +210,7 @@
 @media (max-width: 768px) {
   .banner {
 
-    .banner--slider {
+    .banner__slider {
 
       .slick-dots {
         margin-bottom: 0;
@@ -235,16 +236,17 @@
       }
 
 
-      .banner--slider-element {
+      .banner__slider-element {
 
-        .banner--slider-element-caption {
+        .banner__slider-element-caption {
 
-          .banner--slider-element-caption-title {
+          .banner__slider-element-caption-title {
 
             font-size: 45px;
             margin-bottom: 2rem;
           }
-          .banner--slider-element-caption-btn {
+
+          .banner__slider-element-caption-btn {
 
             .btn {
 
@@ -255,13 +257,13 @@
               border: 2px solid white;
 
 
-              .banner--slider-element-caption-btn-img-app {
+              .banner__slider-element-caption-btn-img-app {
                 width: 35px;
                 height: 35px;
                 margin: 0;
               }
 
-              .banner--slider-element-caption-btn-img-play {
+              .banner__slider-element-caption-btn-img-play {
                 width: 30px;
                 height: 32px;
                 margin: 0;
@@ -277,19 +279,19 @@
 @media (max-width: 667px) {
   .banner {
 
-    .banner--slider {
+    .banner__slider {
 
-      .banner--slider-element {
+      .banner__slider-element {
 
-        .banner--slider-element-caption {
+        .banner__slider-element-caption {
 
-          .banner--slider-element-caption-title {
+          .banner__slider-element-caption-title {
 
             font-size: 40px;
             margin-bottom: 1rem;
           }
 
-          .banner--slider-element-caption-btn {
+          .banner__slider-element-caption-btn {
 
             .btn {
 
@@ -298,13 +300,13 @@
               height: 50px;
 
 
-              .banner--slider-element-caption-btn-img-app {
+              .banner__slider-element-caption-btn-img-app {
                 width: 30px;
                 height: 30px;
                 margin: 0;
               }
 
-              .banner--slider-element-caption-btn-img-play {
+              .banner__slider-element-caption-btn-img-play {
                 width: 25px;
                 height: 27px;
                 margin: 0;
@@ -317,10 +319,10 @@
   }
 }
 
-@media (max-width: 520px){
+@media (max-width: 520px) {
   .banner {
 
-    .banner--slider {
+    .banner__slider {
 
       .slick-dots {
       }
@@ -341,17 +343,17 @@
       }
 
 
-      .banner--slider-element {
+      .banner__slider-element {
 
-        .banner--slider-element-caption {
+        .banner__slider-element-caption {
 
-          .banner--slider-element-caption-title {
+          .banner__slider-element-caption-title {
 
             font-size: 30px;
             margin-bottom: 1rem;
           }
 
-          .banner--slider-element-caption-btn {
+          .banner__slider-element-caption-btn {
 
             .btn {
 
@@ -360,13 +362,13 @@
               height: 40px;
 
 
-              .banner--slider-element-caption-btn-img-app {
+              .banner__slider-element-caption-btn-img-app {
                 width: 25px;
                 height: 25px;
                 margin: 0;
               }
 
-              .banner--slider-element-caption-btn-img-play {
+              .banner__slider-element-caption-btn-img-play {
                 width: 20px;
                 height: 22px;
                 margin: 0;
@@ -379,22 +381,22 @@
   }
 }
 
-@media (max-width: 440px){
+@media (max-width: 440px) {
   .banner {
 
-    .banner--slider {
+    .banner__slider {
 
-      .banner--slider-element {
+      .banner__slider-element {
 
-        .banner--slider-element-caption {
+        .banner__slider-element-caption {
 
-          .banner--slider-element-caption-title {
+          .banner__slider-element-caption-title {
 
             font-size: 25px;
             margin-bottom: 0.25rem;
           }
 
-          .banner--slider-element-caption-btn {
+          .banner__slider-element-caption-btn {
 
             .btn {
 
@@ -404,13 +406,13 @@
               border: 1px solid white;
 
 
-              .banner--slider-element-caption-btn-img-app {
+              .banner__slider-element-caption-btn-img-app {
                 width: 20px;
                 height: 20px;
                 margin: 0;
               }
 
-              .banner--slider-element-caption-btn-img-play {
+              .banner__slider-element-caption-btn-img-play {
                 width: 15px;
                 height: 17px;
                 margin: 0;

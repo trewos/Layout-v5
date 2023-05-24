@@ -1,4 +1,4 @@
-$('.banner--slider').slick({
+$('.banner__slider').slick({
     dots: true,
     arrows: false,
     slidesToShow: 1,
@@ -7,15 +7,15 @@ $('.banner--slider').slick({
     autoplaySpeed: 5000,
 });
 
-if (document.querySelectorAll('.info--block-element').length > 3) {
-    const elements = document.querySelectorAll('.info--block-element');
+if (document.querySelectorAll('.info__block-element').length > 3) {
+    const elements = document.querySelectorAll('.info__block-element');
 
     elements.forEach((element) => {
         element.style.margin = '0';
     });
 }
 
-$('.share--caption-slider').slick({
+$('.share__caption-slider').slick({
     dots: true,
     arrows: false,
     slidesToShow: 1,
@@ -24,7 +24,7 @@ $('.share--caption-slider').slick({
     autoplaySpeed: 5000,
 });
 
-$('.future--caption-slider').slick({
+$('.future__caption-slider').slick({
     dots: true,
     arrows: false,
     slidesToShow: 1,
@@ -81,3 +81,17 @@ document.querySelector('#footer__form-button').addEventListener('click', functio
     if (!validateForm()) {
     }
 });
+
+function smoothScroll(event, target) {
+    event.preventDefault();
+    const element = document.getElementById(target);
+    const offsetTop = element.offsetTop;
+    const offsetHeight = element.offsetHeight;
+    const windowHeight = window.innerHeight;
+    const distance = offsetTop - ((windowHeight - offsetHeight) / 2);
+    window.scroll({
+        top: distance,
+        left: 0,
+        behavior: 'smooth'
+    });
+}

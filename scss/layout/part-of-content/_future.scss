@@ -3,33 +3,33 @@
   width: 100%;
   background-color: #313131;
 
-  .future--container {
+  .future__container {
     max-width: 1200px;
     padding: 0 15px;
     color: white;
 
-    .future--img {
+    .future__img {
 
       img {
         padding-left: 15px;
       }
     }
 
-    .future--text {
+    .future__text {
       padding: 0;
 
-      .future--caption {
+      .future__caption {
         padding: 19% 15% 0 15px;
         margin-left: 15%;
 
-        .future--caption-title {
+        .future__caption-title {
           font-family: "Montserrat", sans-serif;
           font-size: 48px;
           font-weight: 500;
           margin-bottom: 24px;
         }
 
-        .future--caption-text {
+        .future__caption-text {
           font-family: "Varela Round", sans-serif;
           color: #aeaeae;
           font-size: 18px;
@@ -43,13 +43,13 @@
           margin-bottom: 13.5%;
         }
 
-        .future--caption-slider {
+        .future__caption-slider {
           background-color: white;
           border-radius: 5px;
           width: 470px;
           margin-left: 4px;
 
-          .future--caption-slider-element {
+          .future__caption-slider-element {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -63,7 +63,7 @@
               margin-right: 32px;
             }
 
-            .future--caption-slider-element-text {
+            .future__caption-slider-element-text {
               padding-top: 16px;
 
               h3 {
@@ -133,33 +133,33 @@
   .future {
     padding-top: 40px;
 
-    .future--container {
+    .future__container {
       max-width: 992px;
       padding: 0 15px;
       color: white;
 
-      .future--img {
+      .future__img {
 
         img {
           padding-left: 15px;
         }
       }
 
-      .future--text {
+      .future__text {
         padding: 0;
 
-        .future--caption {
+        .future__caption {
           padding: 19% 15% 0 15px;
           margin-left: 15%;
 
-          .future--caption-title {
+          .future__caption-title {
             font-family: "Montserrat", sans-serif;
             font-size: 48px;
             font-weight: 500;
             margin-bottom: 24px;
           }
 
-          .future--caption-text {
+          .future__caption-text {
             font-family: "Varela Round", sans-serif;
             color: #aeaeae;
             font-size: 18px;
@@ -173,16 +173,16 @@
             margin-bottom: 13.5%;
           }
 
-          .future--caption-slider {
+          .future__caption-slider {
             width: 370px;
 
-            .future--caption-slider-element {
+            .future__caption-slider-element {
               padding: 14px 32px 12px 28px;
 
               img {
               }
 
-              .future--caption-slider-element-text {
+              .future__caption-slider-element-text {
                 padding-top: 14px;
 
                 h3 {
@@ -217,28 +217,28 @@
   .future {
     padding-top: 35px;
 
-    .future--container {
+    .future__container {
       max-width: 767px;
 
-      .future--img {
+      .future__img {
 
       }
 
-      .future--text {
+      .future__text {
         padding: 0;
 
-        .future--caption {
+        .future__caption {
           padding: 19% 15% 0 15px;
           margin-left: 15%;
 
-          .future--caption-title {
+          .future__caption-title {
             font-family: "Montserrat", sans-serif;
             font-size: 40px;
             font-weight: 500;
             margin-bottom: 14px;
           }
 
-          .future--caption-text {
+          .future__caption-text {
             font-size: 16px;
             line-height: 22px;
             text-align: left;
@@ -247,10 +247,10 @@
             margin-bottom: 6.5%;
           }
 
-          .future--caption-slider {
+          .future__caption-slider {
             width: 290px;
 
-            .future--caption-slider-element {
+            .future__caption-slider-element {
               padding: 8px 26px 6px 22px;
 
               img {
@@ -260,7 +260,7 @@
                 margin-right: 22px;
               }
 
-              .future--caption-slider-element-text {
+              .future__caption-slider-element-text {
                 padding-top: 14px;
 
                 h3 {
@@ -295,10 +295,10 @@
   .future {
     padding-top: 35px;
 
-    .future--container {
+    .future__container {
       max-width: 320px;
 
-      .future--img {
+      .future__img {
         padding: 0;
 
         img {
@@ -306,28 +306,28 @@
         }
       }
 
-      .future--text {
+      .future__text {
         padding: 0;
 
-        .future--caption {
+        .future__caption {
           padding: 0;
           margin: 0 auto;
 
-          .future--caption-title {
+          .future__caption-title {
             font-size: 38px;
             margin: 0 auto;
             padding: 0 15px;
             margin-bottom: 18px;
           }
 
-          .future--caption-text {
+          .future__caption-text {
             font-size: 14px;
             line-height: 24px;
             margin: 0 auto 8.5% auto;
             padding: 0 15px;
           }
 
-          .future--caption-slider {
+          .future__caption-slider {
             margin: 0 auto;
 
             .slick-list {

@@ -2,7 +2,7 @@
   width: 100%;
   background-color: #ffffff;
 }
-.info--container {
+.info__container {
   padding: 98px 0;
 
   .info-title {
@@ -12,13 +12,13 @@
     margin-right: 10px;
   }
 
-  .info--block {
+  .info__block {
     margin-top: 62px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .info--block-element {
+    .info__block-element {
       margin: 0;
       color: #666666;
 
@@ -62,7 +62,7 @@
 
 @media (min-width: 320px) {
 
-  .info--container {
+  .info__container {
     padding: 38px 0;
 
     .info-title {
@@ -72,13 +72,13 @@
       margin-right: 0;
     }
 
-    .info--block {
+    .info__block {
       margin-top: 38px;
       display: flex;
       justify-content: center;
       align-items: center;
 
-      .info--block-element {
+      .info__block-element {
         margin: 0;
         color: #666666;
 
@@ -125,7 +125,7 @@
 }
 
 @media (min-width: 768px) {
-  .info--container {
+  .info__container {
     max-width: 720px;
     padding: 52px 0;
 
@@ -136,13 +136,13 @@
       margin-right: 6px;
     }
 
-    .info--block {
+    .info__block {
       margin-top: 42px;
       display: flex;
       justify-content: center;
       align-items: center;
 
-      .info--block-element {
+      .info__block-element {
         margin: 0;
         color: #666666;
 
@@ -189,7 +189,7 @@
 }
 
 @media (min-width: 992px) {
-  .info--container {
+  .info__container {
     max-width: 960px;
     padding: 68px 0;
 
@@ -200,13 +200,13 @@
       margin-right: 6px;
     }
 
-    .info--block {
+    .info__block {
       margin-top: 52px;
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      .info--block-element {
+      .info__block-element {
         margin: 0;
         color: #666666;
 
@@ -252,7 +252,7 @@
 }
 
 @media (min-width: 1200px) {
-  .info--container {
+  .info__container {
     max-width: 1170px;
     padding: 108px 0 115px 0;
 
@@ -264,13 +264,13 @@
       margin-right: 10px;
     }
 
-    .info--block {
+    .info__block {
       margin-top: 46px;
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      .info--block-element {
+      .info__block-element {
         margin: 0;
         color: #666666;
 
