@@ -1,3 +1,7 @@
+/* Slider setting`s */
+
+/* Banner (banner block) */
+
 $('.banner__slider').slick({
     dots: true,
     arrows: false,
@@ -7,6 +11,30 @@ $('.banner__slider').slick({
     autoplaySpeed: 5000,
 });
 
+/* Share block (share block) */
+
+$('.share__block-text-caption-slider').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+});
+
+/* Features (features) */
+
+$('.features__block-text-caption-slider').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+});
+
+/* "Why ama?" add 4 element (info block) */
+
 if (document.querySelectorAll('.info__block-element').length > 3) {
     const elements = document.querySelectorAll('.info__block-element');
 
@@ -15,29 +43,15 @@ if (document.querySelectorAll('.info__block-element').length > 3) {
     });
 }
 
-$('.share__caption-slider').slick({
-    dots: true,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-});
-
-$('.future__caption-slider').slick({
-    dots: true,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-});
+/* Change color heart (TWA block) */
 
 function changeImage(button) {
     button.classList.toggle('clicked');
 }
 
 var imageBlocks = document.querySelectorAll('.TWA__gallery__block');
+
+/* Like function (TWA block) */
 
 imageBlocks.forEach(function(block) {
     var counter = block.querySelector('.TWA__gallery__block-response-likes-counter');
@@ -57,6 +71,8 @@ imageBlocks.forEach(function(block) {
         liked = !liked;
     });
 });
+
+/* Validation (footer block) */
 
 const FooterEmail = document.getElementById('footer__form-email')
 
@@ -81,6 +97,9 @@ document.querySelector('#footer__form-button').addEventListener('click', functio
     if (!validateForm()) {
     }
 });
+
+/* Scroll link (header block) */
+
 
 function smoothScroll(event, target) {
     event.preventDefault();

@@ -1,8 +1,10 @@
+/* Header */
+
 .header {
   width: 100%;
 
   .header__navbar {
-    background-color: #de5d5d;
+    background-color: $bg-color;
     padding: 0;
   }
 
@@ -11,25 +13,18 @@
     padding: 0 15px !important;
 
     .header-logo {
-      color: #ffffff;
-      font-family: "Myriad Pro", sans-serif;
-      font-size: 52px;
-      font-weight: 700;
-      font-style: normal;
-      letter-spacing: normal;
+      color: $white;
+      font: $fs-brand $font-family-header;
       padding: 0;
       margin-top: -2px;
       margin-left: -5px;
     }
 
     .header-burger-menu {
-
       .header-burger-menu-list {
-
         .header-burger-menu-list-item {
           padding: 31px 0 20px;
           margin: 0 12.6px;
-
 
           &:last-child {
             margin: 0;
@@ -38,9 +33,7 @@
           .header-burger-menu-list-link {
             position: relative;
             color: #ffffff;
-            font-family: "Varela Round", sans-serif;
-            font-size: 18px;
-            font-weight: 400;
+            font: 400 $fs-medium-small $font-family-base;
             letter-spacing: 0.025em;
 
             &::before {
@@ -50,7 +43,7 @@
               left: 0;
               width: 100%;
               height: 6px;
-              background-color: white;
+              background-color: $white;
               transform: scaleY(0);
             }
 
@@ -64,9 +57,10 @@
   }
 }
 
+/* Adaptive for header */
+
 @media (max-width: 1200px) {
   .header {
-
     .header__container {
       max-width: 992px;
     }
@@ -75,7 +69,6 @@
 
 @media (max-width: 992px) {
   .header {
-
     .header__container {
       max-width: 768px;
 
@@ -83,23 +76,22 @@
         padding: 15px;
 
         &:focus {
-          border-color: transparent;
+          border-color: $transparent;
         }
 
         span {
           display: block;
           position: relative;
-          height: 2px;
-          width: 30px;
+          @include size(30px, 2px);
           background-color: white;
 
-          &::after, &::before {
+          &::after,
+          &::before {
             margin-left: -15px;
             content: "";
             position: absolute;
-            height: 2px;
-            width: 30px;
-            background-color: white;
+            @include size(30px, 2px);
+            background-color: $white;
           }
 
           &::after {
@@ -113,16 +105,14 @@
       }
 
       .header-logo {
-        font-size: 48px;
+        font-size: $fs-title;
       }
 
       .header-burger-menu {
-
         .header-burger-menu-list {
           display: flex;
           justify-content: flex-start;
           margin: 0;
-
 
           .header-burger-menu-list-item {
             margin-left: 10px;
@@ -137,13 +127,13 @@
             .header-burger-menu-list-link {
               position: relative;
               display: inline-block;
-              font-size: 18px;
+              font-size: $fs-medium-small;
               padding: 4px 0;
 
               &::before {
                 content: "";
                 position: absolute;
-                top: 12px;
+                top: 10px;
                 left: -20px;
                 width: 12px;
                 height: 12px;
@@ -163,30 +153,26 @@
 
 @media (max-width: 768px) {
   .header {
-
     .header__container {
       max-width: 667px;
 
       .header-logo {
-        font-size: 42px;
+        font-size: $fs-extra-smaller-large;
       }
 
       .header-burger-menu {
-
         .header-burger-menu-list {
-
           .header-burger-menu-list-item {
             padding: 6px 0;
 
-
             .header-burger-menu-list-link {
-              font-size: 16px;
+              font-size: $fs-base;
               padding: 4px 0;
 
               &::before {
                 content: "";
                 position: absolute;
-                top: 10px;
+                top: 8px;
                 left: -20px;
                 width: 10px;
                 height: 10px;
@@ -202,24 +188,18 @@
 
 @media (max-width: 667px) {
   .header {
-
     .header__container {
       max-width: 480px;
 
       .header-logo {
-        font-size: 38px;
+        font-size: $fs-title-medium-large;
       }
 
       .header-burger-menu {
-
         .header-burger-menu-list {
-
           .header-burger-menu-list-item {
-
             .header-burger-menu-list-link {
-              font-size: 16px;
               padding: 4px 0;
-
             }
           }
         }
@@ -230,7 +210,6 @@
 
 @media (max-width: 480px) {
   .header {
-
     .header__container {
       max-width: 320px;
     }

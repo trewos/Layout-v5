@@ -1,7 +1,9 @@
+/* CTA */
+
 .CTA {
   padding: 102px 0 109px 0;
   width: 100%;
-  background-color: #de5d5d;
+  background-color: $bg-color;
 
   &__container {
     max-width: 1200px;
@@ -9,11 +11,8 @@
   }
 
   .CTA__block {
-    display: flex;
-    align-items: center;
+    @include row-aligin-center-flex;
     justify-content: space-around;
-    flex-direction: row;
-
 
     &-logo {
       margin: 10.5% -14% 0 0;
@@ -23,38 +22,28 @@
       margin: -3.5% 45px 0 0;
 
       &-title {
-        color: #ffffff;
-        font-family: "Montserrat", sans-serif;
-        font-size: 48px;
-        font-weight: 500;
+        color: $white;
+        font: 500 $fs-title $font-family-title;
       }
 
       &-text {
-        color: #ffffff;
-        font-family: "Varela Round", sans-serif;
-        font-size: 24px;
-        font-weight: 300;
+        color: $white;
+        font: 300 $fs-lg-extra $font-family-base;
         padding-top: 6px;
       }
 
       &-btn {
-        display: flex;
-        flex-direction: row;
+        @include row-flex;
         padding-top: 3.8%;
 
         .btn {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include center-flex;
           margin: 0;
-          color: #ffffff;
-          font-family: "Varela Round", sans-serif;
-          font-size: 30px;
-          font-weight: 400;
-          width: 257px;
-          height: 77px;
+          color: $white;
+          font: 400 $fs-large $font-family-base;
+          @include size(257px, 77px);
           border-radius: 5px;
-          border: 3px solid white;
+          border: 3px solid $white;
 
           &:first-of-type {
             margin-right: 15px;
@@ -65,7 +54,7 @@
           }
 
           &:hover {
-            background-color: rgba(190, 33, 63, 0.5);
+            background-color: $CTA-hover-rgba;
           }
 
           .CTA__block-information-btn-img-app {
@@ -81,7 +70,7 @@
   }
 }
 
-/* Media Queries */
+/* Adaptive for CTA */
 
 @media (max-width: 1200px) {
   .CTA {
@@ -91,40 +80,29 @@
       max-width: 992px;
 
       .CTA__block {
-
         .CTA__block-logo {
           margin: 10.5% 0 0 0;
 
           img {
-            width: 310px;
-            height: 310px;
+            @include size(310px, 310px);
           }
         }
 
         .CTA__block-information {
           margin: -3.5% 0 0 0;
 
-          .CTA__block-information-title {
+          .CTA__block-information-title {}
 
-          }
-
-          .CTA__block-information-text {
-
-          }
+          .CTA__block-information-text {}
 
           .CTA__block-information-btn {
-
             .btn {
               justify-content: center;
-
             }
 
-            .CTA__block-information-btn-img-app {
-            }
+            .CTA__block-information-btn-img-app {}
 
-            .CTA__block-information-btn-img-play {
-
-            }
+            .CTA__block-information-btn-img-play {}
           }
         }
       }
@@ -140,31 +118,25 @@
       max-width: 768px;
 
       .CTA__block {
-
         .CTA__block-logo {
-
-          img {
-            width: 290px;
-            height: 290px;
+          .CTA__block-logo-img {
+            @include size(290px, 290px);
           }
         }
 
         .CTA__block-information {
-
           .CTA__block-information-title {
-            font-size: 40px
+            font-size: $fs-extra-smaller-large;
           }
 
           .CTA__block-information-text {
-            font-size: 20px;
+            font-size: $fs-small-medium;
           }
 
           .CTA__block-information-btn {
-
             .btn {
-              font-size: 22px;
-              width: 197px;
-              height: 57px;
+              font-size: $fs-lg-md;
+              @include size(197px, 57px);
 
               &:first-of-type {
                 margin-right: 12px;
@@ -176,8 +148,7 @@
             }
 
             .CTA__block-information-btn-img-app {
-              width: 35px;
-              height: 35px;
+              @include size(35px, 35px);
               margin-right: 6px;
             }
 
@@ -201,44 +172,32 @@
       max-width: 667px;
 
       .CTA__block {
-
         .CTA__block-logo {
-
-          img {
-            width: 260px;
-            height: 260px;
+          .CTA__block-logo-img {
+            @include size(260px, 260px);
           }
         }
 
         .CTA__block-information {
+          .CTA__block-information-title {}
 
-          .CTA__block-information-title {
-
-          }
-
-          .CTA__block-information-text {
-
-          }
+          .CTA__block-information-text {}
 
           .CTA__block-information-btn {
-
             .btn {
               padding: 0;
               font-size: 0;
-              width: 60px;
-              height: 60px;
-              border: 2px solid white;
+              @include size(60px, 60px);
+              border: 2px solid $white;
             }
 
             .CTA__block-information-btn-img-app {
-              width: 35px;
-              height: 35px;
+              @include size(35px, 35px);
               margin: 0;
             }
 
             .CTA__block-information-btn-img-play {
-              width: 30px;
-              height: 32px;
+              @include size(32px, 30px);
               margin: 0;
             }
           }
@@ -262,20 +221,18 @@
         .CTA__block-logo {
           margin: 0;
 
-          img {
-            width: 245px;
-            height: 245px;
+          .CTA__block-logo-img {
+            @include size(245px, 245px);
           }
         }
 
         .CTA__block-information {
-
           .CTA__block-information-title {
-            font-size: 34px;
+            font-size: $fs-title-small-large;
           }
 
           .CTA__block-information-text {
-            font-size: 18px
+            font-size: $fs-medium-small;
           }
 
           .CTA__block-information-btn {

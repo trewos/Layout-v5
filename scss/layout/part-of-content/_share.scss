@@ -1,61 +1,52 @@
+/* Share */
+
 .share {
   padding-top: 72px;
   width: 100%;
-  background-color: #262626;
+  background-color: $bg-share;
 
   .share__container {
     max-width: 1200px;
     padding: 0 15px;
-    color: white;
+    color: $white;
 
-    .share__img {
+    .share__block-phone {
       order: 1;
     }
 
-    .share__text {
+    .share__block-text {
       order: 2;
       padding: 0;
 
-      .share__caption {
+      .share__block-text-caption {
         padding: 22% 25px 0 5px;
 
-        .share__caption-title {
-          font-family: "Montserrat", sans-serif;
+        .share__block-text-caption-title {
+          font: 500 $fs-title $font-family-title;
           font-size: 48px;
-          font-weight: 500;
           margin-bottom: 18px;
         }
 
-        .share__caption-text {
-          font-family: "Varela Round", sans-serif;
-          color: #aeaeae;
-          font-size: 18px;
-          font-weight: 400;
-          font-style: normal;
-          letter-spacing: normal;
+        .share__block-text-caption-information {
+          font: 400 $fs-medium-small $font-family-base;
+          color: $grey-text;
           line-height: 27px;
-          text-align: left;
           padding-right: 15px;
           margin-bottom: 30px;
         }
 
-        .share__caption-slider {
+        .share__block-text-caption-slider {
           padding-top: 22px;
 
-          .share__caption-slider-element {
-            display: flex;
-            flex-direction: row;
+          .share__block-text-caption-slider-element {
+            @include row-flex;
             justify-content: flex-start;
 
-            .share__caption-slider-element-text {
-              font-family: "Varela Round", sans-serif;
-              color: #aeaeae;
-              font-size: 16px;
-              font-weight: 400;
+            .share__block-text-caption-slider-element-information {
+              font: 400 $fs-base $font-family-base;
+              color: $grey-text;
               margin-top: -5px;
               padding: 0 30px;
-              font-style: normal;
-              letter-spacing: normal;
               line-height: 24px;
             }
           }
@@ -67,9 +58,7 @@
           /* Slider Dots setting`s */
 
           .slick-dots {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            @include aligin-center-flex;
             padding: 20px 0 0;
           }
 
@@ -81,15 +70,14 @@
           .slick-dots button {
             font-size: 0;
             padding: 0;
-            width: 12px;
-            height: 12px;
-            border: 2px solid white;
-            background-color: transparent;
+            @include size(12px, 12px);
+            border: 2px solid $white;
+            background-color: $transparent;
             border-radius: 50%;
           }
 
           .slick-active button {
-            background-color: white;
+            background-color: $white;
           }
         }
       }
@@ -106,50 +94,45 @@
     .share__container {
       max-width: 992px;
 
-      .share__img {
-
-        img {
-          width: 456px;
-          height: 613.7px;
+      .share__block-phone {
+        .share__block-phone-img {
+          @include size(456px, 613.7px);
         }
       }
 
-      .share__text {
+      .share__block-text {
         padding: 0;
 
-        .share__caption {
+        .share__block-text-caption {
           padding: 24% 5px 0 25px;
 
-          .share__caption-title {
-            font-size: 44px;
+          .share__block-text-caption-title {
+            font-size: $fs-extra-small-large;
             margin-bottom: 18px;
           }
 
-          .share__caption-text {
-            font-size: 16px;
+          .share__block-text-caption-information {
+            font-size: $fs-base;
             line-height: 24px;
             padding-right: 15px;
             margin-bottom: 26px;
           }
 
-          .share__caption-slider {
+          .share__block-text-caption-slider {
             padding-top: 20px;
 
-            .share__caption-slider-element {
-
-              .share__caption-slider-element-text {
-                font-size: 15px;
+            .share__block-text-caption-slider-element {
+              .share__block-text-caption-slider-element-information {
+                font-size: $fs-small;
                 margin-top: -3px;
                 margin-bottom: 0;
                 padding: 0 0 0 20px;
                 line-height: 20px;
               }
 
-              .share__caption-slider-element-video {
-
-                img {
-                  width: 130px;
-                  height: 78px;
+              .share__block-text-caption-slider-element-video {
+                .share__block-text-caption-slider-element-img {
+                  @include size(130px, 78px);
                 }
               }
             }
@@ -158,25 +141,6 @@
 
             .slick-dots {
               padding: 16px 0 0;
-            }
-
-            .slick-dots li {
-              list-style: none;
-              margin: 0 0.245em;
-            }
-
-            .slick-dots button {
-              font-size: 0;
-              padding: 0;
-              width: 12px;
-              height: 12px;
-              border: 2px solid white;
-              background-color: transparent;
-              border-radius: 50%;
-            }
-
-            .slick-active button {
-              background-color: white;
             }
           }
         }
@@ -184,6 +148,7 @@
     }
   }
 }
+
 @media (max-width: 992px) {
   .share {
     padding-top: 56px;
@@ -191,77 +156,43 @@
     .share__container {
       max-width: 767px;
 
-      .share__img {
-
-        img {
-          width: 406px;
-          height: 513.7px;
+      .share__block-phone {
+        .share__block-phone-img {
+          @include size(406px, 513.7px);
         }
       }
 
-      .share__text {
+      .share__block-text {
         padding: 0;
 
-        .share__caption {
+        .share__block-text-caption {
           padding: 25.5% 5px 0 5px;
 
-          .share__caption-title {
-            font-size: 40px;
-            margin-bottom: 18px;
+          .share__block-text-caption-title {
+            font-size: $fs-extra-smaller-large;
           }
 
-          .share__caption-text {
-            font-size: 16px;
-            line-height: 24px;
-            padding-right: 15px;
+          .share__block-text-caption-information {
             margin-bottom: 22px;
           }
 
-          .share__caption-slider {
+          .share__block-text-caption-slider {
             padding-top: 16px;
 
-            .share__caption-slider-element {
-
-              .share__caption-slider-element-text {
-                font-size: 13px;
+            .share__block-text-caption-slider-element {
+              .share__block-text-caption-slider-element-information {
+                font-size: $fs-extra-small;
                 margin-top: -3px;
                 margin-bottom: 0;
                 padding: 0 4px 0 12px;
                 line-height: 18px;
               }
 
-              .share__caption-slider-element-video {
-
-                img {
-                  width: 100px;
-                  height: 63px;
+              .share__block-text-caption-slider-element-video {
+                .share__block-text-caption-slider-element-img {
+                  @include size(100px, 63px);
                 }
               }
-            }
-
-            /* Slider Dots setting`s */
-
-            .slick-dots {
-              padding: 16px 0 0;
-            }
-
-            .slick-dots li {
-              list-style: none;
-              margin: 0 0.245em;
-            }
-
-            .slick-dots button {
-              font-size: 0;
-              padding: 0;
-              width: 12px;
-              height: 12px;
-              border: 2px solid white;
-              background-color: transparent;
-              border-radius: 50%;
-            }
-
-            .slick-active button {
-              background-color: white;
             }
           }
         }
@@ -272,84 +203,48 @@
 
 @media (max-width: 767px) {
   .share {
-
     .share__container {
       max-width: 320px;
 
-      .share__img {
-        display: flex;
-        justify-content: center;
+      .share__block-phone {
+        @include center-flex;
         order: 2;
 
-        img {
-          width: 320px;
-          height: 363.7px;
+        .share__block-phone-img {
+          @include size(320px, 363.7px);
         }
       }
 
-      .share__text {
+      .share__block-text {
         order: 1;
 
-        .share__caption {
+        .share__block-text-caption {
           margin: 0 auto 45px;
           padding: 0 15px;
 
-          .share__caption-title {
-            font-size: 38px;
+          .share__block-text-caption-title {
+            font-size: $fs-title-medium-large;
           }
 
-          .share__caption-text {
-            font-size: 14px;
-            line-height: 24px;
-            padding-right: 15px;
-            margin-bottom: 22px;
+          .share__block-text-caption-information {
+            font-size: $fs-smaller;
           }
 
-          .share__caption-slider {
-            padding-top: 16px;
-
-            .share__caption-slider-element {
-
-              .share__caption-slider-element-text {
-                font-size: 12px;
+          .share__block-text-caption-slider {
+            .share__block-text-caption-slider-element {
+              .share__block-text-caption-slider-element-information {
+                font-size: $fs-extra-smaller;
                 margin-top: -3px;
                 margin-bottom: 0;
                 padding: 0 4px 0 12px;
                 line-height: 18px;
               }
 
-              .share__caption-slider-element-video {
-
-                img {
-                  width: 100px;
-                  height: 63px;
+              .share__block-text-caption-slider-element-video {
+                .share__block-text-caption-slider-element-img {
+                  @include size(100px, 63px);
                 }
               }
-            }
-
-            /* Slider Dots setting`s */
-
-            .slick-dots {
-              padding: 16px 0 0;
-            }
-
-            .slick-dots li {
-              list-style: none;
-              margin: 0 0.245em;
-            }
-
-            .slick-dots button {
-              font-size: 0;
-              padding: 0;
-              width: 12px;
-              height: 12px;
-              border: 2px solid white;
-              background-color: transparent;
-              border-radius: 50%;
-            }
-
-            .slick-active button {
-              background-color: white;
             }
           }
         }

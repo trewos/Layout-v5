@@ -1,12 +1,32 @@
+/* Content */
+
 .content {
   width: 100%;
-  padding: 98px 0 0 0;
+  padding: 96px 0 0 0;
 }
+
+/* Part of content */
 
 @import "layout/part-of-content/banner";
 @import "layout/part-of-content/info";
 @import "layout/part-of-content/share";
-@import "layout/part-of-content/future";
-@import "layout/part-of-content/taken";
+@import "layout/part-of-content/features";
+@import "layout/part-of-content/TWA";
 @import "layout/part-of-content/CTA";
 @import "layout/part-of-content/Compatibility";
+
+/* Adaptive for content */
+
+@media (max-width: 992px) {
+  .content {
+    width: 100%;
+    padding: 54px 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding: 44px 0 0 0;
+  }
+}

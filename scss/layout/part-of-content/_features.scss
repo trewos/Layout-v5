@@ -1,0 +1,258 @@
+/* Features */
+
+.features {
+  padding-top: 50px;
+  width: 100%;
+  background-color: $bg-features;
+
+  .features__container {
+    max-width: 1200px;
+    padding: 0 15px;
+    color: $white;
+
+    .features__block-phone {
+      .features__block-phone-img {
+        padding-left: 15px;
+      }
+    }
+
+    .features__block-text {
+      padding: 0;
+
+      .features__block-text-caption {
+        padding: 19% 15% 0 15px;
+        margin-left: 15%;
+
+        .features__block-text-caption-title {
+          font: 500 $fs-title $font-family-title;
+          margin-bottom: 21px;
+        }
+
+        .features__block-text-caption-information {
+          font: 400 $fs-medium-small $font-family-base;
+          color: $grey-text;
+          line-height: 27px;
+          margin-left: 4px;
+          padding-right: 30px;
+          margin-bottom: 13.5%;
+        }
+
+        .features__block-text-caption-slider {
+          background-color: $white;
+          border-radius: 5px;
+          width: 470px;
+          margin-left: 4px;
+
+          .features__block-text-caption-slider-element {
+            @include center-flex-row;
+            padding: 16px 34px 14px 30px;
+
+            .features__block-text-caption-slider-element-img {
+              @include size(89px, 89px);
+              margin-top: -16px;
+              margin-right: 32px;
+            }
+
+            .features__block-text-caption-slider-element-information {
+              padding-top: 16px;
+              font: 400 $fs-base $font-family-base;
+              color: $grey;
+              line-height: 24px;
+
+              .features__block-text-caption-slider-element-information-title {
+                margin-left: -4px;
+                font: 500 $fs-medium-small $font-family-title;
+                color: $red;
+                line-height: 24px;
+              }
+            }
+          }
+
+          .slick-list {
+            overflow: hidden;
+          }
+
+          /* Slider Dots setting`s */
+
+          .slick-dots {
+            @include aligin-center-flex;
+            padding: 2px 0 18px 30px;
+            background-color: $bg-color;
+            @include border-bottom-radius(5px, 5px);
+          }
+
+          .slick-dots li {
+            list-style: none;
+            margin: 0 0.245em;
+          }
+
+          .slick-dots button {
+            font-size: 0;
+            padding: 0;
+            @include size(12px, 12px);
+            border: 2px solid $white;
+            background-color: $transparent;
+            border-radius: 50%;
+          }
+
+          .slick-active button {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Adaptive for features */
+
+@media (max-width: 1200px) {
+  .features {
+    padding-top: 40px;
+
+    .features__container {
+      max-width: 992px;
+      padding: 0 15px;
+      color: $white;
+
+      .features__block-text {
+        padding: 0;
+
+        .features__block-text-caption {
+          .features__block-text-caption-slider {
+            width: 370px;
+
+            .features__block-text-caption-slider-element {
+              padding: 14px 32px 12px 28px;
+
+              .features__block-text-caption-slider-element-information {
+                padding-top: 14px;
+                font-size: $fs-smaller;
+                line-height: 20px;
+
+                .features__block-text-caption-slider-element-information-title {
+                  font-size: $fs-base;
+                  line-height: 20px;
+                }
+              }
+            }
+
+            /* Slider Dots setting`s */
+
+            .slick-dots {
+              padding: 2px 0 16px 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .features {
+    padding-top: 35px;
+
+    .features__container {
+      max-width: 767px;
+
+      .features__block-phone {}
+
+      .features__block-text {
+        padding: 0;
+
+        .features__block-text-caption {
+          .features__block-text-caption-title {
+            font-size: $fs-extra-smaller-large;
+            margin-bottom: 14px;
+          }
+
+          .features__block-text-caption-information {
+            font-size: $fs-base;
+            line-height: 22px;
+            margin-left: 2px;
+            padding-right: 18px;
+            margin-bottom: 6.5%;
+          }
+
+          .features__block-text-caption-slider {
+            width: 290px;
+
+            .features__block-text-caption-slider-element {
+              padding: 8px 26px 6px 22px;
+
+              .features__block-text-caption-slider-element-img {
+                @include size(69px, 69px);
+                margin-top: -14px;
+                margin-right: 22px;
+              }
+
+              .features__block-text-caption-slider-element-information {
+                line-height: 18px;
+                margin-bottom: 0;
+
+                .features__block-text-caption-slider-element-information-title {
+                  margin-left: -2px;
+                  line-height: 18px;
+                }
+              }
+            }
+
+            /* Slider Dots setting`s */
+
+            .slick-dots {
+              padding: 2px 0 16px 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .features {
+    padding-top: 35px;
+
+    .features__container {
+      max-width: 320px;
+
+      .features__block-phone {
+        padding: 0;
+
+        .features__block-phone-img {
+          padding: 0;
+        }
+      }
+
+      .features__block-text {
+        padding: 0;
+
+        .features__block-text-caption {
+          padding: 0;
+          margin: 0 auto;
+
+          .features__block-text-caption-title {
+            font-size: $fs-title-medium-large;
+            margin: 0 auto 18px 0;
+            padding: 0 15px;
+          }
+
+          .features__block-text-caption-information {
+            line-height: 24px;
+            margin: 0 auto 8.5% auto;
+            padding: 0 15px;
+          }
+
+          .features__block-text-caption-slider {
+            margin: 0 auto;
+
+            .slick-list {
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}

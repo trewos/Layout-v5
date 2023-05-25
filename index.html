@@ -2,111 +2,75 @@
 <html lang="eu" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>AMA</title>
 </head>
 <body>
+
+<!-- Website -->
 <div class="wrapper container-fluid">
+    <!-- Header -->
     <header class="header">
+        <!-- Burger-menu -->
         <nav class="header__navbar navbar fixed-top navbar-expand-lg">
-            <div class="header__container container-fluid">
-                <a href="#Hello" onclick="smoothScroll(event, 'Hello')" class="header-logo navbar-brand">ama</a>
-                <button class="header-burger-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
-                    <span class="header-burger-button-toggle navbar-toggler-icon"></span>
-                </button>
+            <div class="header__container container-fluid"><a href="#Hello" onclick="smoothScroll(event, 'Hello')" class="header-logo navbar-brand">ama</a><button class="header-burger-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"><span class="header-burger-button-toggle navbar-toggler-icon"></span></button>
                 <div class="header-burger-menu collapse navbar-collapse" id="navbarContent">
                     <ul class="header-burger-menu-list navbar-nav ml-auto mb-2">
-                        <li class="header-burger-menu-list-item nav-item">
-                            <a href="#Hello" onclick="smoothScroll(event, 'Hello')" class="header-burger-menu-list-link nav-link">Hello</a>
-                        </li>
-                        <li class="header-burger-menu-list-item nav-item">
-                            <a href="#Info" onclick="smoothScroll(event, 'Info')" class="header-burger-menu-list-link nav-link">Overview</a>
-                        </li>
-                        <li class="header-burger-menu-list-item nav-item">
-                            <a href="#Share" onclick="smoothScroll(event, 'Share')" class="header-burger-menu-list-link nav-link">Share</a>
-                        </li>
-                        <li class="header-burger-menu-list-item nav-item">
-                            <a href="#Features" onclick="smoothScroll(event, 'Features')" class="header-burger-menu-list-link nav-link">Features</a>
-                        </li>
-                        <li class="header-burger-menu-list-item nav-item">
-                            <a href="#TWA" onclick="smoothScroll(event, 'TWA')" class="header-burger-menu-list-link nav-link">Gallery</a>
-                        </li>
-                        <li class="header-burger-menu-list-item nav-item">
-                            <a href="#CTA" onclick="smoothScroll(event, 'CTA')" class="header-burger-menu-list-link nav-link">Download</a>
-                        </li>
-                        <li class="header-burger-menu-list-item nav-item">
-                            <a href="#Compatibility" onclick="smoothScroll(event, 'Compatibility')" class="header-burger-menu-list-link last nav-link">Compatibility</a>
-                        </li>
+                        <li class="header-burger-menu-list-item nav-item"><a href="#Hello" onclick="smoothScroll(event, 'Hello')" class="header-burger-menu-list-link nav-link">Hello</a></li>
+                        <li class="header-burger-menu-list-item nav-item"><a href="#Info" onclick="smoothScroll(event, 'Info')" class="header-burger-menu-list-link nav-link">Overview</a></li>
+                        <li class="header-burger-menu-list-item nav-item"><a href="#Share" onclick="smoothScroll(event, 'Share')" class="header-burger-menu-list-link nav-link">Share</a></li>
+                        <li class="header-burger-menu-list-item nav-item"><a href="#Features" onclick="smoothScroll(event, 'Features')" class="header-burger-menu-list-link nav-link">Features</a></li>
+                        <li class="header-burger-menu-list-item nav-item"><a href="#TWA" onclick="smoothScroll(event, 'TWA')" class="header-burger-menu-list-link nav-link">Gallery</a></li>
+                        <li class="header-burger-menu-list-item nav-item"><a href="#CTA" onclick="smoothScroll(event, 'CTA')" class="header-burger-menu-list-link nav-link">Download</a></li>
+                        <li class="header-burger-menu-list-item nav-item"><a href="#Compatibility" onclick="smoothScroll(event, 'Compatibility')" class="header-burger-menu-list-link last nav-link">Compatibility</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Content -->
     <div class="content">
+        <!-- Banner -->
         <div id="Hello" class="banner row">
+            <!-- Banner-slider -->
             <div class="banner__slider col-12">
-                <div class="banner__slider-element">
-                    <img src="img/banner/iPhone.png" class="banner__slider-element-img d-block" alt="Slide 1">
+                <div class="banner__slider-element"><img src="img/banner/iPhone.png" class="banner__slider-element-img d-block" alt="Slide 1">
                     <div class="banner__slider-element-caption">
                         <h3 class="banner__slider-element-caption-title">Capture and Share</h3>
-                        <div class="banner__slider-element-caption-btn">
-                            <a class="btn" href="#"><img src="img/banner/icon-AppStore.png"
-                                                         class="banner__slider-element-caption-btn-img-app">App Store</a>
-                            <a class="btn" href="#"><img src="img/banner/icon-PlayStore.png"
-                                                         class="banner__slider-element-caption-btn-img-play">Play Store</a>
-                        </div>
+                        <div class="banner__slider-element-caption-btn"><a class="btn" href="#"><img src="img/banner/icon-AppStore.png" class="banner__slider-element-caption-btn-img-app" alt="App">App Store</a><a class="btn" href="#"><img src="img/banner/icon-PlayStore.png" class="banner__slider-element-caption-btn-img-play" alt="Play">Play Store</a></div>
                     </div>
                 </div>
-                <div class="banner__slider-element">
-                    <img class="banner__slider-element-img d-block" src="img/banner/iPhone.png" alt="Slide 1">
+                <div class="banner__slider-element"><img class="banner__slider-element-img d-block" src="img/banner/iPhone.png" alt="Slide 1">
                     <div class="banner__slider-element-caption">
                         <h3 class="banner__slider-element-caption-title">Capture and Share</h3>
-                        <div class="banner__slider-element-caption-btn">
-                            <a class="btn" href="#"><img class="banner__slider-element-caption-btn-img-app"
-                                                         src="img/banner/icon-AppStore.png">App Store</a>
-                            <a class="btn" href="#"><img class="banner__slider-element-caption-btn-img-play"
-                                                         src="img/banner/icon-PlayStore.png">Play Store</a>
-                        </div>
-                    </div>
+                        <div class="banner__slider-element-caption-btn"><a class="btn" href="#"><img src="img/banner/icon-AppStore.png" class="banner__slider-element-caption-btn-img-app" alt="App">App Store</a><a class="btn" href="#"><img src="img/banner/icon-PlayStore.png" class="banner__slider-element-caption-btn-img-play" alt="Play">Play Store</a></div>                    </div>
                 </div>
-                <div class="banner__slider-element">
-                    <img class="banner__slider-element-img d-block" src="img/banner/iPhone.png" alt="Slide 1">
+                <div class="banner__slider-element"><img class="banner__slider-element-img d-block" src="img/banner/iPhone.png" alt="Slide 1">
                     <div class="banner__slider-element-caption">
                         <h3 class="banner__slider-element-caption-title">Capture and Share</h3>
-                        <div class="banner__slider-element-caption-btn">
-                            <a class="btn" href="#"><img class="banner__slider-element-caption-btn-img-app"
-                                                         src="img/banner/icon-AppStore.png">App Store</a>
-                            <a class="btn" href="#"><img class="banner__slider-element-caption-btn-img-play"
-                                                         src="img/banner/icon-PlayStore.png">Play Store</a>
-                        </div>
-                    </div>
+                        <div class="banner__slider-element-caption-btn"><a class="btn" href="#"><img src="img/banner/icon-AppStore.png" class="banner__slider-element-caption-btn-img-app" alt="App">App Store</a><a class="btn" href="#"><img src="img/banner/icon-PlayStore.png" class="banner__slider-element-caption-btn-img-play" alt="Play">Play Store</a></div>                    </div>
                 </div>
             </div>
         </div>
+        <!-- Info -->
         <div id="Info" class="info">
             <div class="info__container text-center container-fluid">
                 <h1 class="info-title">Why ama?</h1>
                 <div class="info__block row">
-                    <div class="info__block-element col-lg-3 col-md-6 col-sm-12">
-                        <img src="img/info/Focus.png" class="img-fluid" alt="Focus">
+                    <div class="info__block-element col-lg-3 col-md-6 col-sm-12"><img src="img/info/Focus.png" class="img-fluid" alt="Focus">
                         <h3>Auto focus</h3>
                         <p>ultrices nisl sit amet luctus</p>
                         <p>Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor </p>
                     </div>
-                    <div class="info__block-element col-lg-3 col-md-6 col-sm-12">
-                        <img src="img/info/Touch_ID.png" class="img-fluid" alt="Touch_ID">
+                    <div class="info__block-element col-lg-3 col-md-6 col-sm-12"><img src="img/info/Touch_ID.png" class="img-fluid" alt="Touch_ID">
                         <h3>Secured with Touch ID</h3>
                         <p>ultrices nisl sit amet luctus</p>
                         <p>Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor </p>
                     </div>
-                    <div class="info__block-element col-lg-3 col-md-6 col-sm-12">
-                        <img src="img/info/Filters.png" class="img-fluid" alt="Filters">
+                    <div class="info__block-element col-lg-3 col-md-6 col-sm-12"><img src="img/info/Filters.png" class="img-fluid" alt="Filters">
                         <h3>Your Filters</h3>
                         <p>ultrices nisl sit amet luctus</p>
                         <p>Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor</p>
@@ -114,41 +78,25 @@
                 </div>
             </div>
         </div>
+        <!-- Share -->
         <div id="Share" class="share">
             <div class="share__container container-fluid">
-                <div class="row">
-                    <div class="share__img col-md-6 col-sm-12">
-                        <img src="img/share/iPhone.png" class="img-fluid">
-                    </div>
-                    <div class="share__text col-md-5 col-sm-12">
-                        <div class="share__caption col-md-12">
-                            <h1 class="share__caption-title">Share instantly</h1>
-                            <p class="share__caption-text">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu
-                                ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
-                            <div class="share__caption-slider">
-                                <div class="share__caption-slider-element">
-                                    <a href="#" class="share__caption-slider-element-video">
-                                        <img src="img/share/Video.png" alt="Video">
-                                    </a>
-                                    <p class="share__caption-slider-element-text">Mauris euismod ultrices nisl sit amet
-                                        luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor
-                                        pulvinar.</p>
+                <div class="share__block row">
+                    <div class="share__block-phone col-md-6 col-sm-12"><img src="img/share/iPhone.png" class="share__block-phone-img img-fluid" alt="iPhone"></div>
+                    <div class="share__block-text col-md-5 col-sm-12">
+                        <div class="share__block-text-caption col-md-12">
+                            <h1 class="share__block-text-caption-title">Share instantly</h1>
+                            <p class="share__block-text-caption-information">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                            <!-- Share-slider -->
+                            <div class="share__block-text-caption-slider">
+                                <div class="share__block-text-caption-slider-element"><a href="#" class="share__block-text-caption-slider-element-video"><img src="img/share/Video.png" class="share__block-text-caption-slider-element-img" alt="Video"></a>
+                                    <p class="share__block-text-caption-slider-element-information">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar.</p>
                                 </div>
-                                <div class="share__caption-slider-element">
-                                    <a href="#" class="share__caption-slider-element-video">
-                                        <img src="img/share/Video.png" alt="Video">
-                                    </a>
-                                    <p class="share__caption-slider-element-text">Mauris euismod ultrices nisl sit amet
-                                        luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor
-                                        pulvinar.</p>
+                                <div class="share__block-text-caption-slider-element"><a href="#" class="share__block-text-caption-slider-element-video"><img src="img/share/Video.png" class="share__block-text-caption-slider-element-img" alt="Video"></a>
+                                    <p class="share__block-text-caption-slider-element-information">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar.</p>
                                 </div>
-                                <div class="share__caption-slider-element">
-                                    <a href="#" class="share__caption-slider-element-video">
-                                        <img src="img/share/Video.png" alt="Video">
-                                    </a>
-                                    <p class="share__caption-slider-element-text">Mauris euismod ultrices nisl sit amet
-                                        luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor
-                                        pulvinar.</p>
+                                <div class="share__block-text-caption-slider-element"><a href="#" class="share__block-text-caption-slider-element-video"><img src="img/share/Video.png" class="share__block-text-caption-slider-element-img" alt="Video"></a>
+                                    <p class="share__block-text-caption-slider-element-information">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar.</p>
                                 </div>
                             </div>
                         </div>
@@ -156,155 +104,106 @@
                 </div>
             </div>
         </div>
-        <div id="Features" class="future">
-            <div class="future__container container-fluid">
-                <div class="row">
-                    <div class="future__text col-md-6 col-sm-12">
-                        <div class="future__caption col-md-12">
-                            <h1 class="future__caption-title">New Features</h1>
-                            <p class="future__caption-text">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat
-                                arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
-                            <div class="future__caption-slider">
-                                <div class="future__caption-slider-element">
-                                    <img src="img/future/Brush.png" alt="Brush">
-                                    <div class="future__caption-slider-element-text">
-                                        <h3>Color your photos</h3>
-                                        <p class="future__caption-slider-element-p">ultrices nisl sit amet luctus. Donec
-                                            volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
-                                            gravida.</p>
+        <!-- Features -->
+        <div id="Features" class="features">
+            <div class="features__container container-fluid">
+                <div class="features__block row">
+                    <div class="features__block-text col-md-6 col-sm-12">
+                        <div class="features__block-text-caption col-md-12">
+                            <h1 class="features__block-text-caption-title">New Features</h1>
+                            <p class="features__block-text-caption-information">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                            <!-- Features-slider -->
+                            <div class="features__block-text-caption-slider">
+                                <div class="features__block-text-caption-slider-element"><img src="img/features/Brush.png" class="features__block-text-caption-slider-element-img" alt="Brush">
+                                    <div class="features__block-text-caption-slider-element-information">
+                                        <h3 class="features__block-text-caption-slider-element-information-title">Color your photos</h3>
+                                        <p class="features__block-text-caption-slider-element-information-description">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                                     </div>
                                 </div>
-                                <div class="future__caption-slider-element">
-                                    <img src="img/future/Brush.png" alt="Brush">
-                                    <div class="future__caption-slider-element-text">
-                                        <h3>Color your photos</h3>
-                                        <p class="future__caption-slider-element-p">ultrices nisl sit amet luctus. Donec
-                                            volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
-                                            gravida.</p>
+                                <div class="features__block-text-caption-slider-element"><img src="img/features/Brush.png" class="features__block-text-caption-slider-element-img" alt="Brush">
+                                    <div class="features__block-text-caption-slider-element-information">
+                                        <h3 class="features__block-text-caption-slider-element-information-title">Color your photos</h3>
+                                        <p class="features__block-text-caption-slider-element-information-description">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                                     </div>
                                 </div>
-                                <div class="future__caption-slider-element">
-                                    <img src="img/future/Brush.png" alt="Brush">
-                                    <div class="future__caption-slider-element-text">
-                                        <h3>Color your photos</h3>
-                                        <p class="future__caption-slider-element-p">ultrices nisl sit amet luctus. Donec
-                                            volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
-                                            gravida.</p>
+                                <div class="features__block-text-caption-slider-element"><img src="img/features/Brush.png" class="features__block-text-caption-slider-element-img" alt="Brush">
+                                    <div class="features__block-text-caption-slider-element-information">
+                                        <h3 class="features__block-text-caption-slider-element-information-title">Color your photos</h3>
+                                        <p class="features__block-text-caption-slider-element-information-description">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                                     </div>
                                 </div>
-                                <div class="future__caption-slider-element">
-                                    <img src="img/future/Brush.png" alt="Brush">
-                                    <div class="future__caption-slider-element-text">
-                                        <h3>Color your photos</h3>
-                                        <p class="future__caption-slider-element-p">ultrices nisl sit amet luctus. Donec
-                                            volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
-                                            gravida.</p>
+                                <div class="features__block-text-caption-slider-element"><img src="img/features/Brush.png" class="features__block-text-caption-slider-element-img" alt="Brush">
+                                    <div class="features__block-text-caption-slider-element-information">
+                                        <h3 class="features__block-text-caption-slider-element-information-title">Color your photos</h3>
+                                        <p class="features__block-text-caption-slider-element-information-description">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                                     </div>
                                 </div>
-                                <div class="future__caption-slider-element">
-                                    <img src="img/future/Brush.png" alt="Brush">
-                                    <div class="future__caption-slider-element-text">
-                                        <h3>Color your photos</h3>
-                                        <p class="future__caption-slider-element-p">ultrices nisl sit amet luctus. Donec
-                                            volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
-                                            gravida.</p>
+                                <div class="features__block-text-caption-slider-element"><img src="img/features/Brush.png" class="features__block-text-caption-slider-element-img" alt="Brush">
+                                    <div class="features__block-text-caption-slider-element-information">
+                                        <h3 class="features__block-text-caption-slider-element-information-title">Color your photos</h3>
+                                        <p class="features__block-text-caption-slider-element-information-description">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                                     </div>
                                 </div>
-                                <div class="future__caption-slider-element">
-                                    <img src="img/future/Brush.png" alt="Brush">
-                                    <div class="future__caption-slider-element-text">
-                                        <h3>Color your photos</h3>
-                                        <p class="future__caption-slider-element-p">ultrices nisl sit amet luctus. Donec
-                                            volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
-                                            gravida.</p>
+                                <div class="features__block-text-caption-slider-element"><img src="img/features/Brush.png" class="features__block-text-caption-slider-element-img" alt="Brush">
+                                    <div class="features__block-text-caption-slider-element-information">
+                                        <h3 class="features__block-text-caption-slider-element-information-title">Color your photos</h3>
+                                        <p class="features__block-text-caption-slider-element-information-description">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                                     </div>
                                 </div>
-                                <div class="future__caption-slider-element">
-                                    <img src="img/future/Brush.png" alt="Brush">
-                                    <div class="future__caption-slider-element-text">
-                                        <h3>Color your photos</h3>
-                                        <p class="future__caption-slider-element-p">ultrices nisl sit amet luctus. Donec
-                                            volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec
-                                            gravida.</p>
+                                <div class="features__block-text-caption-slider-element"><img src="img/features/Brush.png" class="features__block-text-caption-slider-element-img" alt="Brush">
+                                    <div class="features__block-text-caption-slider-element-information">
+                                        <h3 class="features__block-text-caption-slider-element-information-title">Color your photos</h3>
+                                        <p class="features__block-text-caption-slider-element-information-description">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="future__img col-md-6 col-sm-12">
-                        <img src="img/future/Nexus_5.png" class="img-fluid">
-                    </div>
+                    <div class="features__block-phone col-md-6 col-sm-12"><img src="img/features/Nexus_5.png" class="features__block-phone-img img-fluid" alt="Phone"></div>
                 </div>
             </div>
         </div>
+        <!-- TWA -->
         <div id="TWA" class="TWA">
             <div class="TWA__container container-fluid">
                 <div class="TWA__block row">
                     <div class="TWA__block-information">
                         <h1 class="TWA__block-information-title">Taken with ama</h1>
-                        <p class="TWA__block-information-text">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat
-                            arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                        <p class="TWA__block-information-text">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
                     </div>
                 </div>
             </div>
+            <!-- TWA-gallery -->
             <div class="TWA__gallery container-fluid">
                 <div class="TWA__gallery__container">
-                    <div class="TWA__gallery__block">
-                        <img src="img/TWA/Photo_1.png" alt="Image 1" class="TWA__gallery__block-photo">
+                    <div class="TWA__gallery__block"><img src="img/TWA/Photo_1.png" alt="Image 1" class="TWA__gallery__block-photo">
                         <div class="TWA__gallery__block-response">
                             <p class="TWA__gallery__block-response-text">Mauris euismod ultrices</p>
-                            <div class="TWA__gallery__block-response-likes">
-                                <button class="TWA__gallery__block-response-likes-button" onclick="changeImage(this)">
-                                    <img src="img/TWA/Heart.png" alt="disable"
-                                         class="TWA__gallery__block-response-likes-disable">
-                                    <img src="img/TWA/HeartRed.png" alt="enable"
-                                         class="TWA__gallery__block-response-likes-enable">
-                                </button>
+                            <div class="TWA__gallery__block-response-likes"><button class="TWA__gallery__block-response-likes-button" onclick="changeImage(this)"><img src="img/TWA/Heart.png" alt="disable" class="TWA__gallery__block-response-likes-disable"><img src="img/TWA/HeartRed.png" alt="enable" class="TWA__gallery__block-response-likes-enable"></button>
                                 <div class="TWA__gallery__block-response-likes-counter">18</div>
                             </div>
                         </div>
                     </div>
-                    <div class="TWA__gallery__block">
-                        <img src="img/TWA/Photo_2.png" alt="Image 2" class="TWA__gallery__block-photo">
+                    <div class="TWA__gallery__block"><img src="img/TWA/Photo_2.png" alt="Image 2" class="TWA__gallery__block-photo">
                         <div class="TWA__gallery__block-response">
                             <p class="TWA__gallery__block-response-text">Mauris euismod ultrices</p>
-                            <div class="TWA__gallery__block-response-likes">
-                                <button class="TWA__gallery__block-response-likes-button" onclick="changeImage(this)">
-                                    <img src="img/TWA/Heart.png" alt="disable"
-                                         class="TWA__gallery__block-response-likes-disable">
-                                    <img src="img/TWA/HeartRed.png" alt="enable"
-                                         class="TWA__gallery__block-response-likes-enable">
-                                </button>
+                            <div class="TWA__gallery__block-response-likes"><button class="TWA__gallery__block-response-likes-button" onclick="changeImage(this)"><img src="img/TWA/Heart.png" alt="disable" class="TWA__gallery__block-response-likes-disable"><img src="img/TWA/HeartRed.png" alt="enable" class="TWA__gallery__block-response-likes-enable"></button>
                                 <div class="TWA__gallery__block-response-likes-counter">71</div>
                             </div>
                         </div>
                     </div>
-                    <div class="TWA__gallery__block">
-                        <img src="img/TWA/Photo_3.png" alt="Image 3" class="TWA__gallery__block-photo">
+                    <div class="TWA__gallery__block"><img src="img/TWA/Photo_3.png" alt="Image 3" class="TWA__gallery__block-photo">
                         <div class="TWA__gallery__block-response">
                             <p class="TWA__gallery__block-response-text">Mauris euismod ultrices</p>
-                            <div class="TWA__gallery__block-response-likes">
-                                <button class="TWA__gallery__block-response-likes-button" onclick="changeImage(this)">
-                                    <img src="img/TWA/Heart.png" alt="disable"
-                                         class="TWA__gallery__block-response-likes-disable">
-                                    <img src="img/TWA/HeartRed.png" alt="enable"
-                                         class="TWA__gallery__block-response-likes-enable">
-                                </button>
+                            <div class="TWA__gallery__block-response-likes"><button class="TWA__gallery__block-response-likes-button" onclick="changeImage(this)"><img src="img/TWA/Heart.png" alt="disable" class="TWA__gallery__block-response-likes-disable"><img src="img/TWA/HeartRed.png" alt="enable" class="TWA__gallery__block-response-likes-enable"></button>
                                 <div class="TWA__gallery__block-response-likes-counter">65</div>
                             </div>
                         </div>
                     </div>
-                    <div class="TWA__gallery__block">
-                        <img src="img/TWA/Photo_4.png" alt="Image 4" class="TWA__gallery__block-photo">
+                    <div class="TWA__gallery__block"><img src="img/TWA/Photo_4.png" alt="Image 4" class="TWA__gallery__block-photo">
                         <div class="TWA__gallery__block-response">
                             <p class="TWA__gallery__block-response-text">Mauris euismod ultrices</p>
-                            <div class="TWA__gallery__block-response-likes">
-                                <button class="TWA__gallery__block-response-likes-button" onclick="changeImage(this)">
-                                    <img src="img/TWA/Heart.png" alt="disable"
-                                         class="TWA__gallery__block-response-likes-disable">
-                                    <img src="img/TWA/HeartRed.png" alt="enable"
-                                         class="TWA__gallery__block-response-likes-enable">
-                                </button>
+                            <div class="TWA__gallery__block-response-likes"><button class="TWA__gallery__block-response-likes-button" onclick="changeImage(this)"><img src="img/TWA/Heart.png" alt="disable" class="TWA__gallery__block-response-likes-disable"><img src="img/TWA/HeartRed.png" alt="enable" class="TWA__gallery__block-response-likes-enable"></button>
                                 <div class="TWA__gallery__block-response-likes-counter">26</div>
                             </div>
                         </div>
@@ -312,74 +211,53 @@
                 </div>
             </div>
         </div>
+        <!-- CTA -->
         <div id="CTA" class="CTA">
             <div class="CTA__container container-fluid">
                 <div class="CTA__block">
-                    <div class="CTA__block-logo">
-                        <img src="img/CTA/logo.png" alt="logo" class="CTA__block-logo-img d-block img-fluid">
-                    </div>
+                    <div class="CTA__block-logo"><img src="img/CTA/logo.png" alt="logo" class="CTA__block-logo-img d-block img-fluid"></div>
                     <div class="CTA__block-information">
                         <h1 class="CTA__block-information-title">Believe me,<br> you don’t wanna <br> miss this app.</h1>
                         <p class="CTA__block-information-text">- Newyork Times</p>
-                        <div class="CTA__block-information-btn">
-                            <a class="btn" href="#"><img class="CTA__block-information-btn-img-app"
-                                                         src="img/banner/icon-AppStore.png" alt="AppStore-logo">App
-                                Store</a>
-                            <a class="btn" href="#"><img class="CTA__block-information-btn-img-play"
-                                                         src="img/banner/icon-PlayStore.png" alt="PlayStore-logo">Play Store</a>
-                        </div>
+                        <div class="CTA__block-information-btn"><a class="btn" href="#"><img class="CTA__block-information-btn-img-app" src="img/banner/icon-AppStore.png" alt="AppStore-logo">App Store</a><a class="btn" href="#"><img class="CTA__block-information-btn-img-play" src="img/banner/icon-PlayStore.png" alt="PlayStore-logo">Play Store</a></div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Compatibility -->
         <div id="Compatibility" class="compatibility">
             <div class="compatibility__container container-fluid">
                 <div class="compatibility__block">
                     <h1 class="compatibility__block-title">Compatibility</h1>
                     <div class="compatibility__block-information">
                         <div class="compatibility__block-information-ios">
-                            <h1 class="compatibility__block-information-ios-title">IOS</h1>
-                            <p class="compatibility__block-information-ios-text">Requires iOS 6.0 or later. Compatible with
-                                iPhone, iPad,<br> and iPod touch. This app is optimized for iPhone 5.</p>
-                            <img src="img/Compatibility/iOS_devices.png" class="compatibility__block-information-ios-img img-fluid">
+                            <h1 class="compatibility__block-information-ios-title">iOS</h1>
+                            <p class="compatibility__block-information-ios-text">Requires iOS 6.0 or later. Compatible with iPhone, iPad,<br> and iPod touch. This app is optimized for iPhone 5.</p><img src="img/Compatibility/iOS_devices.png" class="compatibility__block-information-ios-img img-fluid" alt="iOS-device">
                         </div>
                         <div class="compatibility__block-information-android">
                             <h1 class="compatibility__block-information-android-title">Android</h1>
-                            <p class="compatibility__block-information-android-text">Compatible with Android KitKat 4.4 or
-                                later.<br>
-                                Support for x86 devices (i.e. Samsung Galaxy Tab 3 10.1).</p>
-                            <img src="img/Compatibility/Android_devices.png"
-                                 class="compatibility__block-information-android-img img-fluid">
+                            <p class="compatibility__block-information-android-text">Compatible with Android KitKat 4.4 or later.<br> Support for x86 devices (i.e. Samsung Galaxy Tab 3 10.1).</p><img src="img/Compatibility/Android_devices.png" class="compatibility__block-information-android-img img-fluid" alt="android-device">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="footer__container container-fluid">
             <h1 class="footer__information">© 2014 ama. All Rights Reserved.</h1>
-            <form class="footer__form">
-                <label for="footer__form-email" class="footer__form-label">Subscribe our email newsletter.</label>
-                <div class="footer__form-email">
-                    <input type="email" id="footer__form-email" name="footer__form-email" placeholder="Your email" required="">
-                    <input type="submit" id="footer__form-button" name="footer__form-button" value="Submit">
-                </div>
+            <form class="footer__form"><label for="footer__form-email" class="footer__form-label">Subscribe our email newsletter.</label>
+                <div class="footer__form-email"><input type="email" id="footer__form-email" name="footer__form-email" placeholder="Your email" required=""><input type="submit" id="footer__form-button" name="footer__form-button" value="Submit"></div>
             </form>
         </div>
     </footer>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-        crossorigin="anonymous"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

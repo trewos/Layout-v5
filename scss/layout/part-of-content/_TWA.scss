@@ -1,89 +1,101 @@
+/* TWA */
+
 .TWA {
-  padding-top: 68px;
+  padding-top: 66px;
   width: 100%;
-  background-color: white;
+  background-color: $white;
+
   &__container {
     .TWA__block {
-      margin-bottom: 60px;
+      margin-bottom: 62px;
+
       &-information {
         margin-left: 25.35%;
         text-align: left;
+
         &-title {
-          color: #f06464;
-          font: 600 48px "Montserrat", sans-serif;
+          color: $pink;
+          font: 600 $fs-title $font-family-title;
           margin-left: -3px;
           margin-bottom: 20px;
         }
+
         &-text {
-          color: #666666;
+          color: $grey;
           width: 435px;
-          font: 400 18px "Varela Round", sans-serif;
+          font: 400 $fs-medium-small $font-family-base;
           line-height: 27px;
         }
       }
     }
   }
+
   .TWA__gallery {
     padding: 0;
+
     &__container {
       display: flex;
+
       .TWA__gallery__block {
         position: relative;
-        display: flex;
+        @include column-flex;
         justify-content: center;
         flex-grow: 1;
-        flex-direction: column;
+
         &-photo {
-          width: 100%;
-          height: 100%;
+          @include size(100%, 100%);
         }
+
         &:hover .TWA__gallery__block-photo {
           transform: translateY(-38px);
           transition: transform 0.3s ease;
         }
+
         .TWA__gallery__block-response {
           align-items: center;
-          background-color: #151515;
-          color: #c2c2c2;
-          font: 400 18px "Varela Round", sans-serif;
+          background-color: $bg-black;
+          color: $light-grey;
+          font: 400 $fs-medium-small $font-family-base;
           line-height: 27px;
           display: none;
-          width: 100%;
-          height: auto;
+          @include size(100%, auto);
           position: absolute;
           bottom: 0;
           right: 0;
           padding: 30px 15px;
+
           &-text {
             margin-bottom: 0;
           }
+
           &-likes {
-            display: flex;
-            flex-direction: row;
+            @include row-flex;
             justify-content: space-around;
-            color: #f06464;
+            color: $pink;
+
             &-counter {
-              font-family: "Varela Round", sans-serif;
-              font-size: 24px;
-              font-weight: 400;
-              font-style: normal;
-              letter-spacing: normal;
+              font: 400 $fs-lg-extra $font-family-base;
               line-height: 27px;
               padding-left: 8px;
             }
+
             &-button {
               object-fit: cover;
               background-color: transparent;
-              .TWA__gallery__block-response-likes-disable {
+
+              .TWA__gallery__b0lock-response-likes-disable {
                 display: block;
               }
+
               .TWA__gallery__block-response-likes-enable {
                 display: none;
               }
+
               &.clicked {
                 .TWA__gallery__block-response-likes-disable {
                   display: none;
                 }
+
                 .TWA__gallery__block-response-likes-enable {
                   display: block;
                 }
@@ -91,20 +103,27 @@
             }
           }
         }
+
         &:hover .TWA__gallery__block-response {
-          display: flex;
-          flex-direction: row;
+          @include row-flex;
           justify-content: space-around;
         }
       }
     }
   }
 }
+
+/* Adaptive for TWA */
+
 @media (max-width: 1400px) {
   .TWA {
+
     .TWA__gallery {
+
       &__container {
+
         .TWA__gallery__block {
+
           .TWA__gallery__block-response {
             padding: 30px 20px;
           }
@@ -113,23 +132,29 @@
     }
   }
 }
+
 @media (max-width: 1200px) {
   .TWA {
     .TWA__gallery {
+
       &__container {
+
         .TWA__gallery__block {
+
           .TWA__gallery__block-response {
             padding: 20px 8px;
+
             p {
-              font-size: 14px;
+              font-size: $fs-smaller;
             }
+
             &-likes {
               img {
-                width: 22px;
-                height: 18px;
+                @include size(22px, 18px);
               }
+
               &-counter {
-                font-size: 22px;
+                font-size: $fs-lg-md;
                 padding-left: 4px;
               }
             }
@@ -137,54 +162,71 @@
         }
       }
     }
+
     padding-top: 64px;
+
     &__container {
+
       .TWA__block {
         margin-bottom: 4%;
+
         &-information {
           margin-left: 22%;
+
           &-text {
-            font-size: 18px;
+            font-size: $fs-medium-small;
           }
         }
       }
     }
   }
 }
+
 @media (max-width: 992px) {
   .TWA {
     padding-top: 58px;
+
     &__container {
+
       .TWA__block {
         margin-bottom: 4.4%;
+
         &-information {
           margin-left: 20%;
+
           &-text {
-            font-size: 18px;
+            font-size: $fs-medium-small;
           }
         }
       }
     }
   }
+
   .TWA {
+
     .TWA__gallery {
+
       &__container {
         flex-wrap: wrap;
       }
+
       .TWA__gallery__block {
         flex-basis: 50%;
+
         .TWA__gallery__block-response {
           padding: 30px 25px;
+
           p {
-            font-size: 18px;
+            font-size: $fs-medium-small;
           }
+
           &-likes {
             img {
-              width: 25px;
-              height: 21px;
+              @include size(25px, 21px);
             }
+
             &-counter {
-              font-size: 24px;
+              font-size: $fs-lg-extra;
               padding-left: 8px;
             }
           }
@@ -193,19 +235,24 @@
     }
   }
 }
+
 @media (max-width: 768px) {
   .TWA {
     &__container {
+
       .TWA__block {
         margin-bottom: 5%;
+
         &-information {
           margin-left: 12%;
+
           &-title {
-            font-size: 38px;
+            font-size: $fs-title-medium-large;
             margin-bottom: 15px;
           }
+
           &-text {
-            font-size: 16px;
+            font-size: $fs-base;
             width: 400px;
           }
         }
@@ -213,23 +260,30 @@
     }
   }
 }
+
 @media (max-width: 667px) {
   .TWA {
+
     .TWA__gallery {
+
       &__container {
+
         .TWA__gallery__block {
+
           .TWA__gallery__block-response {
             padding: 20px 8px;
+
             p {
-              font-size: 16px;
+              font-size: $fs-base;
             }
+
             &-likes {
               img {
-                width: 22px;
-                height: 18px;
+                @include size(22px, 18px);
               }
+
               &-counter {
-                font-size: 22px;
+                font-size: $fs-lg-md;
                 padding-left: 4px;
               }
             }
@@ -239,23 +293,30 @@
     }
   }
 }
+
 @media (max-width: 520px) {
   .TWA {
+
     .TWA__gallery {
+
       &__container {
+
         .TWA__gallery__block {
+
           .TWA__gallery__block-response {
             padding: 18px 8px;
+
             p {
-              font-size: 14px;
+              font-size: $fs-smaller;
             }
+
             &-likes {
               img {
-                width: 20px;
-                height: 16px;
+                @include size(20px, 16px);
               }
+
               &-counter {
-                font-size: 20px;
+                font-size: $fs-small-medium;
                 padding-left: 4px;
               }
             }
@@ -265,21 +326,27 @@
     }
   }
 }
+
 @media (max-width: 480px) {
   .TWA {
     padding-top: 50px;
+
     &__container {
       max-width: 320px;
+
       .TWA__block {
         margin: 0 0 10% 0;
+
         &-information {
           margin: 0;
+
           &-title {
-            font-size: 34px;
+            font-size: $fs-title-small-large;
             margin-bottom: 14px;
           }
+
           &-text {
-            font-size: 14px;
+            font-size: $fs-smaller;
             line-height: 24px;
             width: 290px;
           }
@@ -287,27 +354,35 @@
       }
     }
   }
+
   .TWA {
+
     .TWA__gallery {
+
       &__container {
+
         .TWA__gallery__block {
           flex-basis: 100%;
+
           &-photo {
             max-width: 100%;
             max-height: 100%;
           }
+
           .TWA__gallery__block-response {
             padding: 20px 8px;
+
             p {
-              font-size: 16px;
+              font-size: $fs-base;
             }
+
             &-likes {
               img {
-                width: 22px;
-                height: 18px;
+                @include size(22px, 18px);
               }
+
               &-counter {
-                font-size: 22px;
+                font-size: $fs-lg-md;
                 padding-left: 4px;
               }
             }

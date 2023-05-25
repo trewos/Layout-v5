@@ -1,2 +1,71 @@
 /* Color */
-$banner-first-background-color: #de5d5d;
+
+$white: #fff;
+$black: #000;
+$red: #cc5858;
+$pink: #f06464;
+$grey: #666666;
+$light-grey: #c2c2c2;
+$grey-white: #f4f4f4;
+$transparent: transparent;
+
+/* Background-color */
+
+$bg-color: #de5d5d;
+$bg-black: #151515;
+$bg-share: #262626;
+$bg-features: #313131;
+$bg-grey: #e7e7e7;
+
+/* Text-color */
+
+$grey-text: #aeaeae;
+
+/* Border-color */
+
+$border: #cbcbcb;
+$border-input: #a3a3a3;
+
+/* Font-size */
+
+$fs-extra-smaller: 12px;
+$fs-extra-small: 13px;
+$fs-smaller: 14px;
+$fs-small: 15px;
+$fs-medium-small: 18px;
+$fs-large-small: 19px;
+$fs-small-medium: 20px;
+$fs-lg-md: 22px;
+$fs-lg-extra: 24px;
+$fs-medium: 25px;
+$fs-extra-medium: 28px;
+$fs-large: 30px;
+$fs-title-small-large: 34px;
+$fs-title-medium-large: 38px;
+$fs-extra-smaller-large: 40px;
+$fs-extra-small-large: 44px;
+$fs-small-large: 70px;
+$fs-extra-medium-large: 75px;
+$fs-medium-large: 80px;
+$fs-extra-large: 90px;
+
+/* Base font-size */
+
+$fs-base: 16px;
+$fs-title: 48px;
+$fs-brand: 60px;
+
+/* Font Family */
+
+$font-family-base: 'Varela Round', sans-serif;
+$font-family-title: 'Montserrat', sans-serif;
+$font-family-header: 'Myriad Pro Bold', sans-serif;
+
+/* RGBA */
+
+$banner-hover-rgba: rgba(222, 93, 93, 0.5);
+$CTA-hover-rgba: rgba(190, 33, 63, 0.5);
+
+/* Shadow */
+
+$focus-input: 0 0 5px rgba(0, 0, 255, 0.25)

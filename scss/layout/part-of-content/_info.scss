@@ -1,305 +1,45 @@
+/* Info */
+
 .info {
   width: 100%;
-  background-color: #ffffff;
-}
-.info__container {
-  padding: 98px 0;
-
-  .info-title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    margin-right: 10px;
-  }
-
-  .info__block {
-    margin-top: 62px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .info__block-element {
-      margin: 0;
-      color: #666666;
-
-      img {
-        margin-bottom: 38px;
-      }
-
-      h3 {
-        font-family: "Varela Round", sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        padding: 0;
-        letter-spacing: 1px;
-        margin-bottom: 2px;
-      }
-
-      p {
-        font-family: "Varela Round", sans-serif;
-        font-size: 16px;
-        padding: 0;
-        margin: 0;
-      }
-
-      &:first-child {
-        padding-left: 0;
-        margin-left: 35px;
-
-        img {
-          margin-left: 15px;
-        }
-      }
-
-      &:last-child {
-        margin-right: 50px;
-      }
-    }
-  }
-}
-
-/* Adaptive for info-block */
-
-@media (min-width: 320px) {
+  background-color: $white;
 
   .info__container {
-    padding: 38px 0;
+    padding: 98px 0;
 
     .info-title {
-      font-family: "Montserrat", sans-serif;
-      font-size: 22px;
-      font-weight: 500;
-      margin-right: 0;
-    }
-
-    .info__block {
-      margin-top: 38px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .info__block-element {
-        margin: 0;
-        color: #666666;
-
-        img {
-          width: 160px;
-          height: 160px;
-          margin-top: 15px;
-          margin-bottom: 15px;
-        }
-
-        h3 {
-          font-family: "Varela Round", sans-serif;
-          font-size: 14px;
-          font-weight: 400;
-          padding: 0 45px;
-          letter-spacing: 1px;
-          margin-bottom: 4px;
-        }
-
-        p {
-          font-family: "Varela Round", sans-serif;
-          font-size: 12px;
-          line-height: 1;
-          width: 219px;
-          margin: 0 auto;
-        }
-
-        &:first-child {
-          padding-left: 15px;
-          margin-left: 0;
-
-          img {
-            margin-left: 0;
-          }
-        }
-
-        &:last-child {
-          margin-top: 0;
-          margin-right: 0;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .info__container {
-    max-width: 720px;
-    padding: 52px 0;
-
-    .info-title {
-      font-family: "Montserrat", sans-serif;
-      font-size: 30px;
-      font-weight: 500;
-      margin-right: 6px;
-    }
-
-    .info__block {
-      margin-top: 42px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .info__block-element {
-        margin: 0;
-        color: #666666;
-
-        img {
-          width: 180px;
-          height: 180px;
-          margin-bottom: 20px;
-        }
-
-        h3 {
-          font-family: "Varela Round", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          padding: 0;
-          letter-spacing: 1px;
-          margin-bottom: 2px;
-        }
-
-        p {
-          font-family: "Varela Round", sans-serif;
-          font-size: 14px;
-          line-height: 1;
-          width: auto;
-          padding: 0 30px;
-          margin: 0;
-        }
-
-        &:first-child {
-          padding-left: 0;
-          margin-left: 0;
-
-          img {
-            margin-left: 0;
-          }
-        }
-
-        &:last-child {
-          margin-top: 45px;
-          margin-right: 0;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .info__container {
-    max-width: 960px;
-    padding: 68px 0;
-
-    .info-title {
-      font-family: "Montserrat", sans-serif;
-      font-size: 38px;
-      font-weight: 500;
-      margin-right: 6px;
-    }
-
-    .info__block {
-      margin-top: 52px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .info__block-element {
-        margin: 0;
-        color: #666666;
-
-        img {
-          width: 200px;
-          height: 200px;
-          margin-bottom: 30px;
-        }
-
-        h3 {
-          font-family: "Varela Round", sans-serif;
-          font-size: 18px;
-          font-weight: 400;
-          padding: 0;
-          letter-spacing: 1px;
-          margin-bottom: 2px;
-        }
-
-        p {
-          font-family: "Varela Round", sans-serif;
-          font-size: 16px;
-          line-height: 1.25;
-          padding: 0;
-          margin: 0;
-        }
-
-        &:first-child {
-          padding-left: 0;
-          margin-left: 20px;
-
-          img {
-            margin-left: 10px;
-          }
-        }
-
-        &:last-child {
-          margin-top: 0;
-          margin-right: 25px;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .info__container {
-    max-width: 1170px;
-    padding: 108px 0 115px 0;
-
-    .info-title {
-      font-family: "Montserrat", sans-serif;
-      font-size: 48px;
-      font-weight: 500;
-      margin-top: -8px;
+      font: 500 $fs-title $font-family-title;
       margin-right: 10px;
     }
 
     .info__block {
-      margin-top: 46px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include space-between-flex;
+      margin-top: 62px;
 
       .info__block-element {
         margin: 0;
-        color: #666666;
+        color: $grey;
 
         img {
-          width: 229px;
-          height: 229px;
           margin-bottom: 38px;
         }
 
         h3 {
-          font-family: "Varela Round", sans-serif;
-          font-size: 18px;
-          font-weight: 400;
-          padding: 0;
+          font: 400 $fs-medium-small $font-family-base;
           letter-spacing: 1px;
+          padding: 0;
           margin-bottom: 2px;
         }
 
         p {
-          font-family: "Varela Round", sans-serif;
-          font-size: 16px;
+          font: 400 $fs-base $font-family-base;
           padding: 0;
-          line-height: 1.5;
           margin: 0;
         }
 
         &:first-child {
           padding-left: 0;
-          margin-left: 31px;
+          margin-left: 35px;
 
           img {
             margin-left: 15px;
@@ -307,7 +47,233 @@
         }
 
         &:last-child {
-          margin-right: 47px;
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}
+
+/* Adaptive for info */
+
+@media (min-width: 280px) {
+  .info {
+    .info__container {
+      padding: 38px 0;
+
+      .info-title {
+        font: 500 $fs-lg-md $font-family-title;
+        margin-right: 0;
+      }
+
+      .info__block {
+        margin-top: 38px;
+        @include center-flex;
+
+        .info__block-element {
+          margin: 0;
+          color: $grey;
+
+          img {
+            @include size(160px, 160px);
+            margin: 15px 0;
+          }
+
+          h3 {
+            font: 400 $fs-extra-small $font-family-title;
+            padding: 0 45px;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+          }
+
+          p {
+            font: $fs-extra-small $font-family-base;
+            line-height: 1;
+            width: 219px;
+            margin: 0 auto;
+          }
+
+          &:first-child {
+            padding-left: 15px;
+            margin-left: 0;
+
+            img {
+              margin-left: 0;
+            }
+          }
+
+          &:last-child {
+            margin-top: 0;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .info {
+    .info__container {
+      max-width: 738px;
+      padding: 52px 0;
+
+      .info-title {
+        font: 500 $fs-large $font-family-title;
+        margin-right: 6px;
+      }
+
+      .info__block {
+        @include center-flex;
+        margin-top: 42px;
+
+        .info__block-element {
+          margin: 0;
+          color: $grey;
+
+          img {
+            @include size(180px, 180px);
+            margin-bottom: 20px;
+          }
+
+          h3 {
+            font: 400 $fs-base $font-family-base;
+            padding: 0;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+          }
+
+          p {
+            font: 400 $fs-extra-small $font-family-base;
+            line-height: 1;
+            width: auto;
+            padding: 0 30px;
+            margin: 0;
+          }
+
+          &:first-child {
+            padding-left: 0;
+            margin-left: 0;
+
+            img {
+              margin-left: 0;
+            }
+          }
+
+          &:last-child {
+            margin-top: 45px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .info {
+    .info__container {
+      max-width: 960px;
+      padding: 68px 0;
+
+      .info-title {
+        font: 500 $fs-title $fs-title-medium-large;
+        margin-right: 6px;
+      }
+
+      .info__block {
+        margin-top: 52px;
+        @include space-between-flex;
+
+        .info__block-element {
+          margin: 0;
+
+          img {
+            @include size(200px, 200px);
+            margin-bottom: 30px;
+          }
+
+          h3 {
+            padding: 0;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+          }
+
+          p {
+            line-height: 1.25;
+            padding: 0;
+            margin: 0;
+          }
+
+          &:first-child {
+            padding-left: 0;
+            margin-left: 20px;
+
+            img {
+              margin-left: 10px;
+            }
+          }
+
+          &:last-child {
+            margin-top: 0;
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .info {
+    .info__container {
+      max-width: 1170px;
+      padding: 107px 0 115px 0;
+
+      .info-title {
+        font: 500 $fs-title $font-family-title;
+        margin-top: -8px;
+        margin-right: 10px;
+      }
+
+      .info__block {
+        margin-top: 46px;
+        @include space-between-flex;
+
+        .info__block-element {
+          margin: 0;
+
+          img {
+            @include size(229px, 229px);
+            margin-bottom: 38px;
+          }
+
+          h3 {
+            font: 400 $fs-medium-small $font-family-base;
+            padding: 0;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+          }
+
+          p {
+            font: $fs-base $font-family-base;
+            padding: 0;
+            line-height: 1.5;
+            margin: 0;
+          }
+
+          &:first-child {
+            padding-left: 0;
+            margin-left: 43px;
+
+            img {
+              margin-left: 15px;
+            }
+          }
+
+          &:last-child {
+            margin-right: 59px;
+          }
         }
       }
     }

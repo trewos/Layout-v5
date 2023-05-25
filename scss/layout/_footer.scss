@@ -1,22 +1,23 @@
+/* Footer */
+
 .footer {
   padding: 66px 0 78px 0;
   width: 100%;
   margin-top: auto;
+  background-color: $white;
 
   .footer__container {
     max-width: 1200px;
-    display: flex;
+    @include aligin-center-flex;
     justify-content: space-between;
-    align-items: center;
 
-    .footer__information{
+    .footer__information {
       order: 1;
-      color: #666666;
+      color: $grey;
+      margin-top: 3px;
       padding-right: 5px;
       margin-left: -5px;
-      font-family: "Montserrat", sans-serif;
-      font-size: 18px;
-      font-weight: 600;
+      font: 600 $fs-medium-small $font-family-title;
       text-align: left;
     }
 
@@ -25,66 +26,57 @@
       order: 2;
 
       .footer__form-label {
-        color: #666666;
-        font-family: "Varela Round", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
+        color: $grey;
+        font: 400 $fs-base $font-family-base;
         line-height: 24px;
         text-align: left;
         margin-bottom: 15px;
-        margin-left: 8px;
+        margin-left: 6px;
       }
 
-     .footer__form-email {
-       margin-left: 5px;
+      .footer__form-email {
+        margin-left: 5px;
 
-       #footer__form-email {
-         margin-right: 8px;
-         border-radius: 5px;
-         border: 1px solid #a3a3a3;
-         width: 311px;
-         height: 48px;
-         padding: 0 15px;
+        #footer__form-email {
+          margin-right: 12px;
+          border-radius: 5px;
+          border: 1px solid $border-input;
+          @include size(311px, 48px);
+          padding: 0 15px;
 
-         &::placeholder {
-           color: #666666;
-           font-family: "Varela Round",sans-serif;
-           font-size: 16px;
-           font-weight: 400;
-           font-style: normal;
-           letter-spacing: normal;
-           line-height: 24px;
-           text-align: left;
-         }
+          &::placeholder {
+            color: $grey;
+            font: 400 $fs-base $font-family-base;
+            line-height: 24px;
+            text-align: left;
+          }
 
-         &:focus {
-           box-shadow: 0 0 5px rgba(0, 0, 255, 0.25);
+          &:focus {
+            box-shadow: $focus-input;
 
-           &::placeholder {
-             color: transparent;
-           }
-         }
-       }
+            &::placeholder {
+              color: $transparent;
+            }
+          }
+        }
 
-       #footer__form-button {
-         width: 101px;
-         height: 48px;
-         border-radius: 5px;
-         background-color: #f06464;
-         color: #f4f4f4;
-         font-family: "Varela Round",sans-serif;
-         font-size: 16px;
-         font-weight: 400;
-         line-height: 24px;
-       }
-     }
+        #footer__form-button {
+          @include size(101px, 48px);
+          border-radius: 5px;
+          background-color: $pink;
+          color: $grey-white;
+          font: 400 $fs-base $font-family-base;
+          line-height: 24px;
+        }
+      }
     }
   }
 }
 
+/* Adaptive for footer */
+
 @media (max-width: 1200px) {
   .footer {
-
     .footer__container {
       max-width: 992px;
     }
@@ -93,18 +85,16 @@
 
 @media (max-width: 992px) {
   .footer {
-
     .footer__container {
       max-width: 768px;
 
-      .footer__information{
-        font-size: 16px;
+      .footer__information {
+        font-size: $fs-base;
       }
 
       .footer__form {
-
         .footer__form-label {
-          font-size: 14px;
+          font-size: $fs-smaller;
           line-height: 22px;
         }
 
@@ -112,18 +102,16 @@
           margin: -6 0 0 0;
 
           #footer__form-email {
-            width: 270px;
-            height: 45px;
+            @include size(270px, 45px);
 
             &::placeholder {
-              font-size: 14px;
+              font-size: $fs-smaller;
               line-height: 22px;
             }
           }
 
           #footer__form-button {
-            width: 98px;
-            height: 45px;
+            @include size(98px, 45px);
             font-size: 14px;
             line-height: 22px;
           }
@@ -135,7 +123,6 @@
 
 @media (max-width: 768px) {
   .footer {
-
     .footer__container {
       max-width: 320px;
       flex-direction: column;
@@ -149,10 +136,7 @@
         margin-bottom: 30px;
 
         .footer__form-email {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          @include center-flex-column;
 
           #footer__form-email {
             margin: 0 0 10px 0;

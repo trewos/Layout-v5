@@ -3,10 +3,8 @@
 .banner {
   max-width: 100%;
   margin: 0 !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $banner-first-background-color;
+  @include center-flex;
+  background-color: $bg-color;
 
   .banner__slider {
     width: 100%;
@@ -26,9 +24,7 @@
 
     .slick-dots {
       position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include center-flex;
       bottom: 5.5%;
       right: 50%;
       padding: 0;
@@ -43,15 +39,14 @@
     .slick-dots button {
       font-size: 0;
       padding: 0;
-      width: 12px;
-      height: 12px;
-      border: 2px solid white;
-      background-color: transparent;
+      @include size(12px, 12px);
+      border: 2px solid $white;
+      background-color: $transparent;
       border-radius: 50%;
     }
 
     .slick-active button {
-      background-color: white;
+      background-color: $white;
     }
 
     /* Banner Element setting`s */
@@ -60,46 +55,35 @@
       width: 100%;
       padding: 0 15px;
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include center-flex;
 
       .banner__slider-element-caption {
         position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include center-flex-column;
         top: 28%;
         padding-right: 18px;
 
         .banner__slider-element-caption-title {
-          font: 600 90px "Montserrat", sans-serif;
+          font: 600 $fs-extra-large $font-family-title;
           letter-spacing: -0.015em;
-          color: white;
+          color: $white;
           margin-bottom: 4.5rem;
         }
 
         .banner__slider-element-caption-btn {
-          display: flex;
-          flex-direction: row;
+          @include row-flex;
 
           .btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include center-flex;
             margin: 0 15px;
-            color: #ffffff;
-            font-family: "Varela Round", sans-serif;
-            font-size: 30px;
-            font-weight: 400;
-            width: 257px;
-            height: 77px;
+            color: $white;
+            font: 400 $fs-large $font-family-base;
+            @include size(257px, 77px);
             border-radius: 5px;
-            border: 3px solid white;
+            border: 3px solid $white;
 
             &:hover {
-              background-color: rgba(222, 93, 93, 0.5);
+              background-color: $banner-hover-rgba;
             }
 
             .banner__slider-element-caption-btn-img-app {
@@ -120,38 +104,27 @@
 
 @media (max-width: 1200px) {
   .banner {
-
     .banner__slider {
-
-
       .banner__slider-element {
-
         .banner__slider-element-caption {
-
           .banner__slider-element-caption-title {
-            font-size: 75px;
+            font-size: $fs-extra-medium-large;
             margin-bottom: 4rem;
-
           }
 
           .banner__slider-element-caption-btn {
-
             .btn {
               justify-content: center;
-              font-size: 26px;
-              width: 217px;
-              height: 67px;
-
+              font-size: $fs-medium;
+              @include size(217px, 67px);
 
               .banner__slider-element-caption-btn-img-app {
-                width: 42px;
-                height: 42px;
+                @include size(42px, 42px);
                 margin-right: 9px;
               }
 
               .banner__slider-element-caption-btn-img-play {
-                width: 32px;
-                height: 37px;
+                @include size(32px, 37px);
                 margin: 11px 13px 9px 3px;
               }
             }
@@ -164,39 +137,29 @@
 
 @media (max-width: 992px) {
   .banner {
-
     .banner__slider {
-
       .banner__slider-element {
-
         .banner__slider-element-caption {
           padding: 0;
 
           .banner__slider-element-caption-title {
-
-            font-size: 60px;
+            font-size: $fs-brand;
             margin-bottom: 2.5rem;
           }
 
           .banner__slider-element-caption-btn {
-
             .btn {
-
               margin: 0 12px;
-              font-size: 22px;
-              width: 197px;
-              height: 57px;
-
+              font-size: $fs-lg-md;
+              @include size(197px, 57px);
 
               .banner__slider-element-caption-btn-img-app {
-                width: 35px;
-                height: 35px;
+                @include size(35px, 35px);
                 margin-right: 6px;
               }
 
               .banner__slider-element-caption-btn-img-play {
-                width: 27px;
-                height: 32px;
+                @include size(27px, 32px);
                 margin: 9px 11px 7px 1px;
               }
             }
@@ -209,9 +172,7 @@
 
 @media (max-width: 768px) {
   .banner {
-
     .banner__slider {
-
       .slick-dots {
         margin-bottom: 0;
         bottom: 5.5%;
@@ -225,47 +186,35 @@
 
       .slick-dots button {
         font-size: 0;
-        width: 10px;
-        height: 10px;
-        border: 2px solid white;
-
+        @include size(10px, 10px);
+        border: 2px solid $white;
       }
 
       .slick-active button {
-        background-color: white;
+        background-color: $white;
       }
 
-
       .banner__slider-element {
-
         .banner__slider-element-caption {
-
           .banner__slider-element-caption-title {
-
-            font-size: 45px;
+            font-size: $fs-extra-small-large;
             margin-bottom: 2rem;
           }
 
           .banner__slider-element-caption-btn {
-
             .btn {
-
               padding: 0;
               font-size: 0;
-              width: 60px;
-              height: 60px;
-              border: 2px solid white;
-
+              @include size(60px, 60px);
+              border: 2px solid $white;
 
               .banner__slider-element-caption-btn-img-app {
-                width: 35px;
-                height: 35px;
+                @include size(35px, 35px);
                 margin: 0;
               }
 
               .banner__slider-element-caption-btn-img-play {
-                width: 30px;
-                height: 32px;
+                @include size(30px, 32px);
                 margin: 0;
               }
             }
@@ -278,37 +227,26 @@
 
 @media (max-width: 667px) {
   .banner {
-
     .banner__slider {
-
       .banner__slider-element {
-
         .banner__slider-element-caption {
-
           .banner__slider-element-caption-title {
-
-            font-size: 40px;
+            font-size: $fs-extra-smaller-large;
             margin-bottom: 1rem;
           }
 
           .banner__slider-element-caption-btn {
-
             .btn {
-
               margin: 0 9px;
-              width: 50px;
-              height: 50px;
-
+              @include size(50px, 50px);
 
               .banner__slider-element-caption-btn-img-app {
-                width: 30px;
-                height: 30px;
+                @include size(30px, 30px);
                 margin: 0;
               }
 
               .banner__slider-element-caption-btn-img-play {
-                width: 25px;
-                height: 27px;
+                @include size(25px, 27px);
                 margin: 0;
               }
             }
@@ -321,56 +259,36 @@
 
 @media (max-width: 520px) {
   .banner {
-
     .banner__slider {
-
-      .slick-dots {
-      }
-
-      .slick-dots li {
-
-      }
-
       .slick-dots button {
         width: 8px;
         height: 8px;
-        border: 1.5px solid white;
-
+        border: 1.5px solid $white;
       }
 
       .slick-active button {
-        background-color: white;
+        background-color: $white;
       }
 
-
       .banner__slider-element {
-
         .banner__slider-element-caption {
-
           .banner__slider-element-caption-title {
-
-            font-size: 30px;
+            font-size: $fs-large;
             margin-bottom: 1rem;
           }
 
           .banner__slider-element-caption-btn {
-
             .btn {
-
               margin: 0 6px;
-              width: 40px;
-              height: 40px;
-
+              @include size(40px, 40px);
 
               .banner__slider-element-caption-btn-img-app {
-                width: 25px;
-                height: 25px;
+                @include size(25px, 25px);
                 margin: 0;
               }
 
               .banner__slider-element-caption-btn-img-play {
-                width: 20px;
-                height: 22px;
+                @include size(20px, 22px);
                 margin: 0;
               }
             }
@@ -383,38 +301,27 @@
 
 @media (max-width: 440px) {
   .banner {
-
     .banner__slider {
-
       .banner__slider-element {
-
         .banner__slider-element-caption {
-
           .banner__slider-element-caption-title {
-
-            font-size: 25px;
+            font-size: $fs-medium;
             margin-bottom: 0.25rem;
           }
 
           .banner__slider-element-caption-btn {
-
             .btn {
-
               margin: 0 3px;
-              width: 30px;
-              height: 30px;
-              border: 1px solid white;
-
+              @include size(30px, 30px);
+              border: 1px solid $white;
 
               .banner__slider-element-caption-btn-img-app {
-                width: 20px;
-                height: 20px;
+                @include size(20px, 20px);
                 margin: 0;
               }
 
               .banner__slider-element-caption-btn-img-play {
-                width: 15px;
-                height: 17px;
+                @include size(15px, 17px);
                 margin: 0;
               }
             }
