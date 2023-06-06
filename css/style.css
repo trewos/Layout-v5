@@ -551,6 +551,7 @@ h6 {
   margin-right: 10px;
 }
 .info .info__container .info__block {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -588,7 +589,7 @@ h6 {
 /* Adaptive for info */
 @media (min-width: 280px) {
   .info .info__container {
-    padding: 38px 0;
+    padding: 38px 15px;
   }
   .info .info__container .info-title {
     font: 500 22px "Montserrat", sans-serif;
@@ -601,7 +602,7 @@ h6 {
     justify-content: center;
   }
   .info .info__container .info__block .info__block-element {
-    margin: 0;
+    margin: 0 auto 0 30px;
     color: #666666;
   }
   .info .info__container .info__block .info__block-element img {
@@ -620,10 +621,10 @@ h6 {
     line-height: 1;
     width: 219px;
     margin: 0 auto;
+    padding: 0;
   }
   .info .info__container .info__block .info__block-element:first-child {
     padding-left: 15px;
-    margin-left: 0;
   }
   .info .info__container .info__block .info__block-element:first-child img {
     margin-left: 0;
